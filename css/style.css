@@ -1,0 +1,72 @@
+* {text-align: center;
+}
+h1 {
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-size: 25px;
+}
+
+p1 {
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-size: 19px;
+}
+ol {text-align: center;
+    list-style-position: inside;}
+{
+    list-style: georgian-inside;
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+}
+ul {text-align: center;
+    list-style-position: inside;
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-size: 19px;}
+
+
+li {text-align: center;
+    list-style-position: inside;
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-size: 18px;}
+{list-style: square;}
+
+
+h2 {color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+th { list-style: square;
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+}
+td { list-style: square;
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+}
+body {
+    background-color: ghostwhite;
+    background-image:url("../img/sumerki-vecher-provintsiia-gory-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p2 {
+    color: ghostwhite;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-size: 19px;
+}
+
+
