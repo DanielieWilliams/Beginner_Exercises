@@ -1,0 +1,8 @@
+main {
+    grid-template-areas:
+            "red red . . . green"
+            ". . . . . . "
+            ". . . . . ."
+            ". blue blue . . ."
+            ". blue blue . . .";
+}
