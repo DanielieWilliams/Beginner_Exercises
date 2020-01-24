@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>cssGrid Layout 6</title>
+    <title>cssGrid Layout 1</title>
 </head>
-<body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 50px;
 
+    }
+    main {
+        margin-top: 2em;
+        width: 500px;
+        height: 375px;
+        box-sizing: border-box;
+        display: inline-grid;
+        grid-template-columns: repeat(5, 25%) 1fr;
+        grid-template-rows: repeat(5, 25% ) 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    main div {
+        font-size: 1em;
+        color: black;
+        background: white;
+        border: 15px floralwhite;
+    }
+    header {
+        border-bottom: 5px;
+    }
+    yellowgreen {
+        grid-area: yellowgreen;
+        background: yellowgreen;
+    }
+    .one {grid-area: 1 / 6 / 1 / 1;
+        background: yellowgreen}
+    .two {grid-area: 2 / 1 / 5 / 1;
+        background: yellowgreen}
+    .three {grid-area: 2 / 6 / 4/ 2;
+        background: yellowgreen}
+    .four {grid-area: 4 / 2 / 4 / 6;
+        background: yellowgreen}
+    .five {grid-area: 5 / 6/ 8 / 1;
+        background: yellowgreen}
+
+</style>
+<body>
+<main>
+
+    <div class="one">Header</div>
+    <div class="two">Nav</div>
+    <div class="three">Article</div>
+    <div class="four">Ads</div>
+    <div class="five">Footer</div>
+</main>
 </body>
 </html>
