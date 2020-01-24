@@ -4,7 +4,76 @@
     <meta charset="UTF-8">
     <title>cssGrid Layout 11</title>
 </head>
-<body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 50px;
 
+    }
+    main {
+        margin-top: 1em;
+        width: 600px;
+        height: 475px;
+        box-sizing: border-box;
+        display: inline-grid;
+        grid-template-columns: repeat(6, 18%) 1fr;
+        grid-template-rows: repeat(5, 18% ) 1fr;
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+    }
+    main div {
+        font-size: 1em;
+        color: white;
+        background: white;
+        border: 10px floralwhite;
+    }
+    header {
+        border-bottom: 5px;
+    }
+    gold {
+        grid-area: gold;
+        background: gold;
+    }
+    .one {grid-area: 1 / 1 / 2 / 6;
+        background: gold}
+    .two {grid-area: 8 / 2 / 2 / 1;
+        background: gold}
+    .three {grid-area: 2 / 2 / 3/ 2;
+        background: gold}
+    .four {grid-area: 3 / 3 / 2 / 6;
+        background: gold}
+    .five {grid-area: 3 / 4/ 3 / 2;
+        background: gold}
+    .six {grid-area: 3 / 4 / 4 / 6;
+        background: gold}
+    .seven {grid-area: 4 / 2 / 4 / 3;
+        background: gold}
+    .eight {grid-area: 4 / 3 / 4/ 3;
+        background: gold}
+    .nine {grid-area: 5 / 4 / 4 / 6;
+        background: gold}
+    .ten {grid-area: 5 / 2/ 8 / 6;
+        background: gold}
+
+</style>
+<body>
+<main>
+
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="six">6</div>
+    <div class="seven">7</div>
+    <div class="eight">8</div>
+    <div class="nine">9</div>
+    <div class="ten">10</div>
+</main>
 </body>
 </html>
+
+
