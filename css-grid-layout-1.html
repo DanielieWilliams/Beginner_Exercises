@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssGrid Layout 1</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 50px;
+    }
+    main {
+        margin-top: 2em;
+        width: 500px;
+        height: 375px;
+        box-sizing: border-box;
+        display: inline-grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    main div {
+        font-size: 1em;
+        color: black;
+        background: white;
+        border: 5px floralwhite;
+
+
+
+    }
+    header {
+        border-bottom: 5px;
+    }
+    gold{
+        grid-area: gold;
+        background: gold;
+    }
+    .one {grid-area: 1 / 6 / 1 / 1;
+        background: gold}
+    .two {grid-area: 2 / 2 / 8 / 1;
+        background: gold}
+    .three {grid-area: 2 / 5 / -2/ 2;
+        background: gold}
+    .four {grid-area: -5 / 6 / 5 / 5;
+        background: gold}
+    .five {grid-area: 5 / 6/ 8 / -5;
+        background: gold}
+    }
+</style>
+<body>
+<main>
+
+    <div class="one">Header</div>
+    <div class="two">Nav</div>
+    <div class="three">Article</div>
+    <div class="four">Ads</div>
+    <div class="five">Footer</div>
+</main>
+</body>
+</html>
