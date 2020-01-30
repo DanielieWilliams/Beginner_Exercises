@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hstyle {
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    padding: 12px 0 0 10px;
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+.paragraph {
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 4px;
+    overflow: scroll;
+}
+
+main {
+    background: white;
+    display: grid;
+    grid-template-rows: 8% 8% 12% 10% 8%;
+    grid-template-columns: 15% 85% 15% 15% 15%;
+    height: 100vh;
+    width:100vw;
+    /*grid-template-areas:*/
+
+    /*        "nav nav"*/
+    /*        "side grid2"*/
+    /*        "side grid2"*/
+    /*        "side numbers"*/
+    /*        "side footer";*/
+}					/*switch around as you change page*/
+
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    /*grid-area: grid2;*/
+    /*grid-template-rows: 75% 30% 20%;*/
+    /*grid-template-columns: 10% 10% ;*/
+    height: 70vh;
+    width: 85vw;
+    /*grid-template-areas:*/
+    /*        "heading1 "*/
+    /*        "heading2 "*/
+    /*        "heading3 "*/
+    /*        "p1 "*/
+    /*        "p2"*/
+    /*        "p3";*/
+}
+
+.exhibitA {
+    grid-area: exhibitA;
+
+}
+
+.nav {
+    background: purple;
+    grid-area: 1 / 1 / 2 / 10;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    color: whitesmoke;
+    height: 5em;
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    text-decoration: none;
+    color: silver;
+}
+
+.nav a:link{
+    text-decoration: none;
+    color: silver;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: pink;
+}
+
+.sidebar {
+    background: lightgrey;
+    grid-area: 2 / 1 / 8 / 2;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: flex-start;
+    text-align: left;
+    margin: auto;
+    padding-left: 5em;
+    width: 10%;
+    height: 75%;
+
+}
+
+.sidebar a:hover {
+    background: purple;
+    text-decoration: none;
+}
+
+.sidebar a:link{
+    text-decoration: none;
+}
+
+.logo:hover {
+    background: purple;
+}
+
+.num {
+    color: silver;
+    padding: 10px;
+    border: silver 1px solid;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+}
+
+.num:hover{
+    background: black;
+}
+
+.heading1 {
+    grid-area: 2/ 2/ 4/ 7;
+    background: whitesmoke;
+}
+
+.heading2 {
+    grid-area: 4/ 2 / 6/ 7;
+    background: whitesmoke;
+}
+
+.heading3 {
+    grid-area: 6/ 2/ 8/ 7;
+    background: whitesmoke;
+}
+.pararaph{
+    grid-area: p1;
+}
+
+
+.pararaph{
+    grid-area: p2;
+}
+
+.pararaph{
+    grid-area: p3;
+}
+
+
+.firstAd {
+    height: 80%;
+    width: 90%;
+    margin: 4px;
+    border: silver 1px solid;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.secondAd {
+    height: 80%;
+    width: 90%;
+    margin: 4px;
+    border: silver 1px solid;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.numbers {
+    grid-area: numbers;
+    border: pink 2px solid;
+    border-radius: 5px;
+    background: slategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    box-shadow: 2px 2px black;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.sub-footer{
+    grid-area: subfooter;
+}

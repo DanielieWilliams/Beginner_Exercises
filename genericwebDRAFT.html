@@ -1,0 +1,85 @@
+<!doctype html>
+<title>Generic Web Layout</title>
+    <nav>
+        <ul>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Values</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </nav>
+<style>
+    #grid {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 0;
+    }
+    #grid > div {
+        color: black;
+        font-size: 4vw;
+        padding: 10px;
+        background: grey;
+    }
+    #grid > div:nth-child(1) {
+        grid-column: span 4;
+    }
+    #grid > div:nth-child(2) {
+        grid-row: span 4;
+    }
+    #grid > div:nth-child(4) {
+        grid-column: span 2;
+    }
+    #grid > div:nth-child(5) {
+        grid-column: span 2;
+    }
+    #grid > div:nth-child(10) {
+        grid-column: span 3;
+    }
+</style>
+<body
+        id="grid">
+<div class="exhibitA">
+    <div class="Heading">
+        <p class="Heading1 hStyle">First Class Security</p>
+        <p class="paragraph1 paragraph">Leapfrog mega fopen d00dz foo strlen tunnel in rm -rf finally gc mountain dew stack trace false perl vi semaphore float less fatal foad python tarball. Var void then do daemon xss continue recursively man pages James T. Kirk unix flood system printf pragma double January 1, 1970 L0phtCrack *.* if for. Afk protocol frack giga loop leet machine code salt int suitably small values endif hash.</p>
+
+
+        <div class="Heading">
+            <p class="Heading2 hStyle">Thinking Like the Enemy</p>
+            <p class="paragraph2 paragraph">Overflow error ip fopen lib stack syn cache stack trace firewall infinite loop d00dz for chown throw race condition int bit ascii. Server linux eaten by a grue emacs gurfle Leslie Lamport protected default *.* pwned. Less giga piggyback frack python client L0phtCrack blob fatal sql tera while then semaphore ack deadlock.</p>
+
+            <div class="Heading">
+                <p class="Heading3 hStyle">The Best Insider Partners</p>
+                <p class="paragraph3 paragraph">Snarf semaphore leapfrog bin data bit segfault hash emacs char spoof foo private. Afk unix cookie overflow all your base are belong to us ip cat Starcraft. Buffer python class bypass vi hack the mainframe true warez worm tunnel in ban script kiddies.</p>
+
+
+                <div class="Ad">
+                    <p class="firstAdd Ad1"><img alt="Cybersecurity Photo" src="link to image.jpg" height="65"></p></div>
+
+                <div class="Ad">
+                    <p class="secondAdd Ad2"><img alt="Cybersecurity Photo" src="link to image.jpg" height="65"></p></div>
+
+                <div class="Ad">
+                    <p class="thirdAdd Ad3"><img alt="Cybersecurity Photo" src="link to image.jpg" height="65"></p></div>
+
+                <div class="Ad">
+                    <p class="fourthAdd Ad4"><img alt="Cybersecurity Photo" src="link to image.jpg" height="65"></p></div>
+
+                <div class="Ad">
+                    <p class="fifthAdd Ad5"><img alt="Cybersecurity Photo" src="link to image.jpg" height="65"></p></div>
+
+                <div class="Ad">
+                    <p class="sixthAdd Ad6"><img alt="Cybersecurity Photo" src="link to image.jpg" height="65"></p></div>
+
+
+<br>
+
+
+</body>

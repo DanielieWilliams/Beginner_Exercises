@@ -1,0 +1,36 @@
+}*{
+    box-sizing: border-box;
+}
+
+
+.jumbotron {
+
+
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: #848487;
+    font-family: Arial Hebrew;
+    background: rgba(255,255,255, .4);
+
+}
+
+
+.d-sm-none {
+
+
+}
+
+
+.d-md-block {
+
+
+}
+
+@media screen and (min-width:768px) { /* ... */ }
+
+
