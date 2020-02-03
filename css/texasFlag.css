@@ -6,45 +6,43 @@ body {
     grid-template-areas: "nav header footer";
 }
 
-{
-    grid-template-rows:  50px 50fr 50px 50fr;
-    grid-template-columns: 20% 1fr;
-    height: 500vh;
-    margin: 350px;
+.container{
+    display: grid;
+    grid-template-rows:  100px 100px;
+    grid-template-columns: 100px 300px;
+    height: 200px;
+    width: 400px;
+    background-color: lightgrey;
+            grid-template-areas:
+                        "nav header"
+                        "nav footer";
 }
 
- header {
-     height: 35px;
-     width: 50px;
-    padding: 1.2em;
+.header {
+    display: grid;
+    grid-area: header;
+
+    height: 50px;
+    width: 100px;
     background: white;
 }
 
-nav {
-    height: 25px;
-    width: 20px;
-    padding: 1.2em;
-    background-color: blue;
+.nav {
+    display: grid;
+    grid-area: nav;
+
+    height: 30px;
+    width: 30px;
+    background: blue;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
     79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-footer {
-    height: 25px;
-    width: 20px;
-    padding: 1.2em;
-    background-color: red;
-}
-
-#pageHeader {
-    grid-area: header;
-}
-
-#pageNav {
-    grid-area: nav;
-}
-
-#pageFooter {
+.footer {
+    display: grid;
     grid-area: footer;
-}
 
+    height: 100px;
+    width: 200px;
+    background: red;
+}
