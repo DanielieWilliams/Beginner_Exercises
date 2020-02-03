@@ -1,0 +1,50 @@
+*{ box-sizing: border-box;
+
+}
+body {
+    display: grid;
+    grid-template-areas: "nav header footer";
+}
+
+{
+    grid-template-rows:  50px 50fr 50px 50fr;
+    grid-template-columns: 20% 1fr;
+    height: 500vh;
+    margin: 350px;
+}
+
+ header {
+     height: 35px;
+     width: 50px;
+    padding: 1.2em;
+    background: white;
+}
+
+nav {
+    height: 25px;
+    width: 20px;
+    padding: 1.2em;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+footer {
+    height: 25px;
+    width: 20px;
+    padding: 1.2em;
+    background-color: red;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#pageNav {
+    grid-area: nav;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+

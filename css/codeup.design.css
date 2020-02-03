@@ -1,0 +1,32 @@
+*{
+    background-color: lightgrey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 18px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin: 0;
+}
+.circle1{
+    background: #E6563B;
+}
+.circle2{
+    background: #EB9D3a;
+}
+.circle3{
+    background: #7CB06C;
+}
+.circle4{
+    background: #00ABA9;
+}
