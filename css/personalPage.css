@@ -1,0 +1,252 @@
+
+/*GRID1*/
+.grid1{
+    justify-content: center;
+    background: transparent;
+    display: grid;
+    grid-template-rows:  repeat(2, auto);
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+          "About ."
+            ". currentProject";
+}
+
+.About {
+    display: grid;
+    grid-area: About;
+    font-family: Helvetica sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    justify-content: auto;
+
+
+}
+
+.currentProjects {
+    display: grid;
+    grid-area: currentProjects;
+    border: 50px;
+    border-top: 50px;
+    font-family: Helvetica sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+
+
+/*BACKGROUND-IMAGE*/
+body {
+    background-image: url('../img/vlad-kutepov-6l1ytM3sxvM-unsplash.jpg');
+
+}
+
+/*CENTERED NAME*/
+.centered {
+    font-family: Helvetica sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*NAV BAR*/
+.mainNavBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    height: 50px;
+    border: 50px;
+    margin: 100px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/*.jumbotron-fluid {*/
+/*    display: flex;*/
+/*    background-color: rgba(255, 255, 255, .4);*/
+
+/*    height: 25%*/
+
+/*.alert-info a:link{*/
+/*    grid-area: alert;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding: 5%;*/
+/*    background: rgb(201,255,255);*/
+/*    border: 2px lightgrey solid;*/
+/*    text-decoration: none;*/
+/*    margin-bottom: -20px;*/
+/*}*/
+/*.alert-info a:visited{*/
+/*    border: 2px lightgrey solid;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*h1{*/
+/*    grid-area: company;*/
+/*    font-size: 45px;*/
+/*    font-family: Helvetica, sans-serif;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-top: 5%;*/
+/*    margin-bottom: -4%;*/
+/*}*/
+
+
+}
+/*.nav-links{*/
+/*    list-style-type: none;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    padding: 6px;*/
+
+/*}*/
+
+/*.nav-links a:link{*/
+/*    grid-area: nav;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    background: lightgrey;*/
+/*    padding: 7px;*/
+/*    margin: 5px 0 5px 0;*/
+/*}*/
+
+/*!*.header-img {*!*/
+/*!*    display: flex;*!*/
+/*!*    grid-area: header;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: center;*!*/
+/*!*}*!*/
+
+/*!*.header-img > img{*!*/
+/*!*    width: 30%;*!*/
+/*!*    height: auto;*!*/
+/*!*}*!*/
+
+/*#main{*/
+/*    grid-area: main;*/
+/*}*/
+
+
+/*.sub-section{*/
+/*    grid-area: subsection;*/
+/*    font-style: italic;*/
+/*    font-family: sans-serif;*/
+/*    font-size: .9em;*/
+/*}*/
+/*p{*/
+/*    font-family: sans-serif;*/
+
+/*}*/
+/*h2{*/
+/*    font-family: sans-serif;*/
+
+/*}*/
+
+/*#social-media-links{*/
+/*    grid-area: social;*/
+/*}*/
+
+/*footer {*/
+/*    grid-area: footer;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 15px;*/
+/*}*/
+
+/*@media screen and (max-width: 768px) {*/
+/*    .header-img {*/
+/*    }*/
+/*}*/
+
+
+
+/*@media screen and (min-width: 768px){*/
+/*    .hidden-on-desktop{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 768px){*/
+/*    body{*/
+/*        display: grid;*/
+/*        grid-template-rows:  repeat(4, auto);*/
+/*        grid-template-columns: 65% 30%;*/
+/*        grid-row-gap: 10px;*/
+/*        grid-column-gap: 10px;*/
+/*        height: 95vh;*/
+/*        width: 95vw;*/
+/*        grid-template-areas:*/
+/*                " company nav"*/
+/*                "header header"*/
+/*                "main subsection"*/
+/*                "footer footer";*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 768px){*/
+/*    .alert-info a:link{*/
+/*        grid-area: alert;*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        padding: 5%;*/
+/*        background: lightblue;*/
+/*        border: 2px lightgrey solid;*/
+/*        text-decoration: none;*/
+/*        margin-bottom: -20px;*/
+/*    }*/
+
+/*    h1{*/
+/*        grid-area: company;*/
+/*        font-size: 45px;*/
+/*        font-family: Helvetica;*/
+/*        display: flex;*/
+/*        justify-content: flex-start;*/
+/*        align-items: center;*/
+/*        margin: 15px;*/
+/*    }*/
+/*    .nav-links{*/
+/*        display: flex;*/
+/*        justify-content: flex-end;*/
+/*        flex-direction: row;*/
+/*        padding: 6px;*/
+/*        text-decoration: underline;*/
+/*    }*/
+
+/*    .nav-links a:link{*/
+/*        list-style-type: unset ;*/
+/*        background: white;*/
+/*        grid-area: nav;*/
+/*        display: flex;*/
+/*        padding: 4px;*/
+/*        margin: 5px;*/
+/*    }*/
+
+/*    !*.header-img{*!*/
+/*    !*    display: flex;*!*/
+/*    !*    grid-area: header;*!*/
+/*    !*    width: 100%;*!*/
+/*    !*    height: auto;*!*/
+/*    !*    align-items: center;*!*/
+/*    !*    justify-content: center;*!*/
+/*    !*}*!*/
+
+/*    #main{*/
+/*        grid-area: main;*/
+/*    }*/
+
+/*    .sub-section{*/
+/*        grid-area: subsection;*/
+/*        font-style: italic;*/
+/*    }*/
+
+/*    #social-media-links{*/
+/*        grid-area: social;*/
+/*        display: flex;*/
+/*    }*/
+/*}*/
