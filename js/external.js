@@ -50,7 +50,7 @@ var facebookHOurs = Number (prompt( 'What were your hours at Facebook?'));
 var currentSchedule = Number(prompt('What days do you not have class?'));
 var classSchedule = Number(prompt(  'Is there a timeframe you are not in class?'));
 var availability = ((currentSchedule + classSchedule));
-alert ("Your currentSchedule + classSchedule" + availability;
+alert ("Your currentSchedule + classSchedule" + availability);
 
 
 //THIRD SCENARIO copied from VIVIAN
@@ -63,12 +63,12 @@ alert("Student can enroll: " + studentEnrolledStatus);
 
 
 //FOURTH SCENARIO (unsolved)
-var premiumMem = userInput(prompt( 'Are you a Premium Member?'));
-var  regularMem = userInput(prompt(  'Are you a Regular Member?'));
-var  offer1 = userInput(prompt(  'How many product offers do you have?'));
-var  offer2 = userInput(prompt(  'Please enter product offer expiration date.'));
-var  = ((premiumMem + offer1 + offer2);
-alert ("" + );
+// var premiumMem = userInput(prompt( 'Are you a Premium Member?'));
+// var  regularMem = userInput(prompt(  'Are you a Regular Member?'));
+// var  offer1 = userInput(prompt(  'How many product offers do you have?'));
+// var  offer2 = userInput(prompt(  'Please enter product offer expiration date.'));
+// var  = ((premiumMem + offer1 + offer2);
+// alert ("" + );
 
 
 //FOURTH SCENARIO copied from Vivan
