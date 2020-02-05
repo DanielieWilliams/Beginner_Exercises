@@ -3,46 +3,58 @@
 }
 body {
     display: grid;
-    grid-template-areas: "nav header footer";
+    grid-template-areas: "nav header star footer";
 }
 
 .container{
-    display: grid;
-    grid-template-rows:  100px 100px;
-    grid-template-columns: 100px 300px;
-    height: 200px;
-    width: 400px;
-    background-color: blue;
+
+    grid-template-rows:  200px 200px;
+    grid-template-columns: 300px 300px;
+    height: 500px;
+    width: 750px;
+    background-color: midnightblue;
             grid-template-areas:
                         "nav header"
+                        "nav star"
                         "nav footer";
 }
 
 .header {
     display: grid;
     grid-area: header;
-
-    height: 50px;
-    width: 100px;
+    margin-left: 250px;
+    padding-right: 31.2em;
+    /*margin-bottom: 450%;*/
+    height: 250px;
+    width: 484px;
     background: white;
-}
-
-.nav {
-    display: grid;
-    grid-area: nav;
-
-    height: 30px;
-    width: 30px;
-    background: white;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
-    79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .footer {
     display: grid;
-    grid-area: footer;
-
-    height: 100px;
-    width: 200px;
+    grid-area: header;
+    margin-left: 250px;
+    padding-right: 31.2em;
+    /*margin-bottom: 450%;*/
+    height: 250px;
+    width: 484px;
     background: red;
+
 }
+
+.nav {
+        display: grid;
+        grid-area: nav;
+        margin-top: -375px;
+        padding-bottom: 30%;
+        height: 30%;
+        width: 32%;
+        background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+
+
+

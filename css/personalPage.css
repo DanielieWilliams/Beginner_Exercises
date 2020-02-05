@@ -17,8 +17,7 @@
     display: grid;
     grid-area: About;
     font-family: Helvetica sans-serif;
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 30px;
     justify-content: auto;
 
 
@@ -29,13 +28,21 @@
     grid-area: currentProjects;
     border: 50px;
     border-top: 50px;
+    padding: 5em;
     font-family: Helvetica sans-serif;
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 30px;
     justify-content: flex-end;
 }
 
+.p1 {
+    text-align: center;
+    font-family: Helvetica sans-serif;
+}
 
+.p2 {
+    text-align: center;
+    font-family: Helvetica sans-serif;
+}
 
 /*BACKGROUND-IMAGE*/
 body {
@@ -65,6 +72,8 @@ body {
     padding-left: 2px;
     padding-right: 2px;
 }
+
+
 
 /*.jumbotron-fluid {*/
 /*    display: flex;*/
