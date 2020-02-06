@@ -17,26 +17,47 @@
  */
 
 
-var numberOfItems = Number(prompt("How many items are you buying?"));
-var offerIsValid = confirm(prompt("Is the offer valid?"));
-var isPremiumMember = confirm(prompt("Are you a premium member?"));
-
-var discountAppliedStatus = offerIsValid  &&  (isPremiumMember || numberOfItems > 2);
-alert("Can use discount:" + discountAppliedStatus);
-
-var userNumber = number(prompt("Would you like to enter a number?"));
-var numberInput = confirm(prompt("Enter number here");
-
-var userNumber =
+// var numberOfItems = Number(prompt("How many items are you buying?"));
+// var offerIsValid = confirm(prompt("Is the offer valid?"));
+// var isPremiumMember = confirm(prompt("Are you a premium member?"));
+//
+// var discountAppliedStatus = offerIsValid  &&  (isPremiumMember || numberOfItems > 2);
+// alert("Can use discount:" + discountAppliedStatus);
 
 
+var number = Number(prompt("Would you like to enter a number?"));
+var numberInput = confirm(prompt("Enter number here."));
+var numberIsEven = confirm(prompt("Number is even."));
+var numberIsOdd = confirm(prompt("Number is odd"));
+var isNotANumber = confirm(prompt("What you entered is not a number"));
 
 
+// REFRACTOR INTO A FUNCTION //
 
+function number(
 
-
-
-
+4
+)
+;
+{
+    var number
+    ("1 - 100");
+}
+if numberInput = ("even");
+{
+    alert("Number Is Even!");
+}
+else
+if numberInput("odd");
+alert("Number Is Odd!");
+{
+    if numberInput = ("100");
+}
+{
+    alert("Number is even.");
+}
+}
+defaultStatus: isNotANumber("Not a number.");
 
 
 /* ########################################################################## */
@@ -59,29 +80,34 @@ var userNumber =
  * console.logging the function's return value
  */
 
-function analyzeColor(color);{
-    var color(blue);
-} if analyzeColor("blue"); {
-    return("Blue is the color of the sky");
-} if analyzeColor("red"); {
-    return("Strawberry is "red"); {
-    } if analyzeColor("Cyan"); {
+function analyzeColor(color);
+{
+    var color
+    (blue);
+}
+else
+if analyzeColor("blue");
+{
+    return ("Blue is the color of the sky");
+}
+else
+if analyzeColor("red");
+{
+    return ("Strawberry is "
+    red
+    "); {
+}
+else
+if analyzeColor("Cyan");
+{
     return ("I don't know anything about Cyan");
-}else if{
-        defaultStatus: analyzeColor("None of these colors");
+}
+else
+{
+    defaultStatus: analyzeColor("None of these colors");
 }
 
 console.log("Displaying colors of things.");
-
-
-
-
-
-
-
-
-
-
 
 
 // Don't change the next two lines!
@@ -130,41 +156,51 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-function calculateTotal(total); {
-var luckyNumber (0-5);
-}if (luckyNumber === 0);
-    return("no discount");
-} else if (takesInRandomNumber === 1); {
-    return("10% discount");{
-}   else if(takesInRandomNumber === 2);
-    return("25% discount"); {
-    else if (takesInRandomNumber === 3);
-    return("35% discount");
-    else if (takesInRandomNumber === 4);
-    return("45% discount");
-    else if (takesInRandomNumber 5);
-    return("You'll get it all for free!");
+function calculateTotal(total);
+{
+    var luckyNumber
+    (0 - 5);
 }
+if (luckyNumber === 0) ;
+return ("no discount");
+} else
+if (takesInRandomNumber === 1) ;
+{
+    return ("10% discount");
+    {
+    }
+else
+    if (takesInRandomNumber === 2) ;
+    return ("25% discount");
+    {
+    else
+        if (takesInRandomNumber === 3) ;
+        return ("35% discount");
+    else
+        if (takesInRandomNumber === 4) ;
+        return ("45% discount");
+    else
+        if (takesInRandomNumber 5
+    )
+        ;
+        return ("You'll get it all for free!");
+    }
 
 
-
-
-/**
- * TODO:
- * Uncomment the line below to generate a random number between 0 and 6.
- * Prompt the user for their total bill, then use your `calculateTotal` function
- * and alerts to display to the user what their lucky number was, what their
- * price before the discount was, and what their price after the discount is.
- */
+    /**
+     * TODO:
+     * Uncomment the line below to generate a random number between 0 and 6.
+     * Prompt the user for their total bill, then use your `calculateTotal` function
+     * and alerts to display to the user what their lucky number was, what their
+     * price before the discount was, and what their price after the discount is.
+     */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 
 
+//---------------------------------------CASEY WALK THROUGH----------------------------------------//
 
-
-//Casey Walk through//
-
-console.log("hello from conditionals lec.js!");
+    console.log("hello from conditionals lec.js!");
 
 ​
 
@@ -191,83 +227,86 @@ console.log("hello from conditionals lec.js!");
 // }
 
 
-
 ​
 
 // ================ IF STATEMENT EXAMPLES ================
 
 //TODO Together: Show a specific navbar if user is admin
+    var isAdmin = true;
+    if (isAdmin) {
+        // Display a specific navbar
+        console.log("Displaying Admin Navbar");
+
+    }
 
 //TODO Together: Send a 20% off coupon if its users birthday
-var isBirthday = true;
-if(isBirthday) {
-    //send 20% coupon//
-    console.log("Sending Coupon");
-}
+    var isBirthday = true;
+    if (isBirthday) {
+        //send 20% coupon//
+        console.log("Sending Coupon");
+    }
 //TODO Together: Write an if statement that alerts "It's raining" if isRainy is true
-var isRainy = true; //or false
-alert("It's Raining");
+    var isRainy = true; //or false
+    alert("It's Raining");
 
 
-//TODO Together: Write an if statement that alerts the user whether or not they have enough money to buy a new item. Assume there are no hidden fees or taxes.
+//TODO Together: Write an if statement that alerts the user whether or not they have enough
+// money to buy a new item. Assume there are no hidden fees or taxes.
 
 ​var currentBalance = 1000;
-var itemCost = 500;
+    var itemCost = 500;
 
-if(currentBalance > itemCost) {
-    alert("You can buy.");
-}
-
-​
+    if (currentBalance > itemCost) {
+        alert("You can buy.");
+    }
 
 ​
-
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0
-var numberOfLives = 3;
-if numberOfLives = 0;
-alert ("Sorry Game Over");
+    var numberOfLives = 3;
+    if numberOfLives = 0;
+    alert("Sorry Game Over");
 
 
 //COPIED FROM CASEY //
-var numberOfLives = 3;
-if(numberOfLives === 0);
-{
-    alert("Sorry Game Over");
-}
+    var numberOfLives = 3;
+    if (numberOfLives === 0) ;
+    {
+        alert("Sorry Game Over");
+    }
 
 //^^ we can also use a <= sign //
 
 
 //TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
 
-var ifSnowing = true;
-alert("It's Snowing!");
+    var ifSnowing = true;
+    alert("It's Snowing!");
 
 // COPIED FROM CASEY//
 
-var isSnowing = false;
-if(isSnowing);
-alert('It\s Snowing!');
+    var isSnowing = false;
+    if (isSnowing) ;
+    alert('It\s Snowing!');
 }
 
 //BETTER WAY TO WRITE THIS //
 
-var weather ="snowing;"
-if(weather === "snowing") {
-"alert ('It\s Snowing!');
+var weather = "snowing;"
+if (weather === "snowing") {
+    "alert ('It\s Snowing!');
 
 //TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
 
 ​var numberInput = 1 < 10;
-var
+    var
 
-​
+        ​
 //COPIED FROM CASEY//
 
-var number =11;
-if(number > 10) {
-    alert ("number is greater than 10");
-}
+    var number = 11;
+    if (number > 10) {
+        alert("number is greater than 10");
+    }
 ​
 
 ​
@@ -277,11 +316,13 @@ if(number > 10) {
 ​//COPIED//
 
     function greaterThan10(number);
-    if (number >10) {
-        alert ("number is greater than 10");
+    if (number > 10) {
+        alert("number is greater than 10");
     }
 
-console.log(greaterThan10));
+    console.log(greaterThan10)
+)
+;
 ​
 
 ​
@@ -309,7 +350,7 @@ console.log(greaterThan10));
 ​//RANDOM NOTES for IF/ELSE EXAMPLES //
 
 var light = "yellow";
-if(light === "green");
+if (light === "green") ;
 {
     alert("Go ahead, you're clear!");
     {
@@ -337,7 +378,8 @@ if(light === "green");
         }
 
 
-        //TODO Together: Write an if statement that alerts "It's raining" if isRainy is true, else return "have a nice day!"
+        //TODO Together: Write an if statement that alerts "It's raining" if
+        // isRainy is true, else return "have a nice day!"
 
     ​
 var isRainy = true;
@@ -355,7 +397,8 @@ var isRainy = false;
 
 ​
 
-//TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0, else alert "Next Level!"
+//TODO: Write an if statement that alerts "Sorry, game over" if
+// numberOfLives is 0, else alert "Next Level!"
 
     var ifNumberOfLives = 1;
     if (numberOfLives > 1) ;
@@ -375,7 +418,8 @@ else
     }
 
 
-//TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing", else alert "Check back later for more details!"
+//TODO: Write an if statement that alerts "It's snowing!" if weather is equal to
+// "snowing", else alert "Check back later for more details!"
 
     var snowing = true;
     {
@@ -399,7 +443,8 @@ else
     }
 
 
-//TODO: Write an if statement that alerts true if numberInput is greater than 10, else alert "the number is less than 10"
+//TODO: Write an if statement that alerts true if numberInput is greater than 10,
+// else alert "the number is less than 10"
     var numberOfInput = 15;
     if (numberOfInput < 10) ;
     {
@@ -411,7 +456,8 @@ else
     }
 
 
-//TODO: Refactor todo#1 as a function named checkIfGameIsOver, that accepts numberOfLives and returns "Sorry, game over" if numberOfLives is 0, else return "Next Level!.
+//TODO: Refactor todo#1 as a function named checkIfGameIsOver, that accepts numberOfLives and returns
+// "Sorry, game over" if numberOfLives is 0, else return "Next Level!.
 
 ​function checkIfGameIsOver(numberOfLives);
     {
@@ -490,7 +536,8 @@ else
 
             ​
 
-//TODO: Write a confirm asking the user if they are 13 years of age or older. If they are, alert "You may proceed", if they are not, alert "Sorry, you are not able to proceed"
+//TODO: Write a confirm asking the user if they are 13 years of age or older. If they are, alert
+// "You may proceed", if they are not, alert "Sorry, you are not able to proceed"
 
             ​
 
@@ -518,7 +565,8 @@ else
 
 // =============== IF / ELSE IF/ELSE STATEMENT EXAMPLES ================
 
-//TODO Together: Write an if/else if/else statement that alerts "It's snowing!" if weather is equal to "snowing", alerts "It's raining" if weather is equal to "raining", alerts "have a nice day" for all other cases
+//TODO Together: Write an if/else if/else statement that alerts "It's snowing!" if weather is equal to
+// "snowing", alerts "It's raining" if weather is equal to "raining", alerts "have a nice day" for all other cases
 
             ​  //////Ternary Operator //////
 
@@ -589,12 +637,14 @@ else
                 alert("Just plain cheese..")
             }
         else
-            if (pizzaPreference === "scottadito"); {
-            alert("Real Italian")
-        }else {
-            alert(pizzaPreference + "is my favorite, lets order some");
+            if (pizzaPreference === "scottadito") ;
+            {
+                alert("Real Italian")
             }
-
+        else
+            {
+                alert(pizzaPreference + "is my favorite, lets order some");
+            }
 
 
 // var pizzaPreference = prompt("What kind of pizza do you like?");
@@ -621,56 +671,64 @@ else
 
 // }
 
-​
+        ​
 
-​
+        ​
 
-​
+        ​
 
-​
+        ​
 
 //TODO: Write a function that accepts a string that is a traffic light color as an input. When this function is called,
 // it should return a message informing the user what to do when approaching that color light at an intersection.
 
-            function checkWeather(weather);
-            {
-                if (weather === "snowing")
-                    }
-            return "It's Snowing!";
-            {
+            //     function checkWeather(weather);
+            //     {
+            //         if (weather === "snowing")
+            //             }
+            //     return "It's Snowing!";
+            //     {
+            //
+            //     }
+            // else
+            //     if (weather === "raining") {
+            //         return "It's raining!";
+            //     } else {
+            //         return "Have a nice day!";
+            //     }
+            //
+            //     console.log(checkWeather(weather));
+            // :
+            //     "cloudy"
+            // ))
+            //     ;
+            //     alert(checkWeather(weather
+            // :
+            //     "meatballs"
+            // ))
+            //     ;
 
-            }
-        else
-            if (weather === "raining") {
-                return "It's raining!";
-            } else {
-                return "Have a nice day!";
-            }
 
-            console.log(checkWeather(weather
-        :
-            "cloudy"
-        ))
+        ​function trafficLight(
+
+            "red"
+        )
             ;
-            alert(checkWeather(weather
-        :
-            "meatballs"
-        ))
-            ;
-
-
-​function trafficLight("red");{
-if trafficLight === "red") {
+            {
+                if trafficLight === "red")
 }
 return "Press break pedal to stop.";
 }
-else {
-if (traffic === "green") {
-return "Go!";
-}else {
+else
+{
+    if (traffic === "green")
+        return "Go!";
+}
+else
+{
     return "Slow down.";
 }
-    console.log("trafficLight" + pizzaPreference);
+console.log("trafficLight" + pizzaPreference);
 
 
 
@@ -686,26 +744,45 @@ return "Go!";
 
 // ================ NESTED STATEMENTS ===============
 
-//TODO Together: If user is under 15, they are not eligible for a learners permit, else they are. If they are eligible, check age. If they are 15 they are eligible for a learners permit, if they are 16 or older and have a permit, they are eligible for license, if they are 16 or older and do not have a permit, they are not eligble for a license.
+//TODO Together: If user is under 15, they are not eligible for a learners permit, else they are.
+// If they are eligible, check age. If they are 15 they are eligible for a learners permit, if they are
+// 16 or older and have a permit, they are eligible for license, if they are 16 or older and do not
+// have a permit, they are not eligble for a license.
+
+​//user  < 15 = not eligible
+//user > 15 = are eligible
+
+var userAge = 17;
+var hasPermit = true;
+
+if (userAge < 15) {
+    alert("You are not eligible for a permit");
+} else {
+
+
+    //all possibilities
+    //check for user age
+
+}
+if (userAge === 15) {
+    alert("You are eligible for a learns permit");
+} else if ((userAge >= 16) && hasPermit) {
+}   //older than or equal to 16 and has a permit//
+alert("You can have a drivers license")
+{
+}
+else
+if ((userAge >= 16) && !hasPermit) {
+    alert("You are not elibile for a license.")
+}
+
+
+
+​// ================ TERNARY STATEMENT ================
 
 ​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-// ================ TERNARY STATEMENT ================
-
-​
-
+    {
+    }
 //TODO Together: Regular way
 
 ​
@@ -766,7 +843,15 @@ return "Go!";
 
 //WRITE YOUR TERNARY STATEMENT HERE!
 
-​
+var weatherMessage = prompt("Is the weather sunny?");
+if (weatherMessage === "sunny") {
+    alert("Weather Is Sunny")
+} else {
+    if (weatherMessage === "rainy") {
+        alert("Weather is Rainy")
+    } else {
+        weatherMessage = "Have a nice day"
+    }
 
 ​
 
@@ -777,11 +862,6 @@ return "Go!";
     //NOTES//
 
 
-
-
-
-
-
 //TODO Together:
 
 ​
@@ -789,28 +869,24 @@ return "Go!";
 var pizzaPreference = prompt("What kind of pizza do you like?");
 
 
+    switch (pizzaPreference) {
 
-switch(pizzaPreference) {
+        case "pineapple and hot sauce":
+            alert("What a coincidence, that's my favorite!");
 
-    case "pineapple and hot sauce":
+            break;
 
-        alert("What a coincidence, that's my favorite!");
+        case "cheese":
+            alert("Just plain cheese? Okay...");
 
-        break;
+            break;
 
-    case "cheese":
+        default:
+            alert(pizzaPreference + " isn't my favorite, but let's order some!");
 
-        alert("Just plain cheese? Okay...");
+            break;
 
-        break;
-
-    default:
-
-        alert(pizzaPreference + " isn't my favorite, but let's order some!");
-
-        break;
-
-}
+    }
 
     console.log("User pizza input: " + pizzaPreference);
 
@@ -818,15 +894,45 @@ switch(pizzaPreference) {
 
 ​
 
-//TODO: Write a switch statement that evaluates weather as the condition. Check for "rainy", "sunny", "snow", and a default case.
+//TODO: Write a switch statement that evaluates weather as the condition. Check for
+// "rainy", "sunny", "snow", and a default case.
 
-​
+​var weather = prompt("What's the weather like outside in Paonia?");
+
+    switch (weather) {
+        case "rainy":
+            alert("I love the rainy weather!");
+            break;
+        case "sunny":
+            alert("As long as it's not above 80 degrees, I'm good");
+            break;
+        case "snowing":
+            alert("I love snow and would love to live in the small town of Paonia");
+            break;
+        default:
+            alert(weather + "is not my favorite weather.");
+            break;
+    }
+
 
 ​
 
 //TODO: Rewrite the intersection function from earlier as a switch statement.
 
-​
+
+    var trafficLight = prompt("What light do you see as you approach traffic light?");
+
+    switch (trafficLight) {
+        case "red":
+            alert("Press the break pedal to stop");
+            break;
+        case "green":
+            alert("Keep on truckin");
+            break;
+        default:
+            alert(trafficLight + "otherwise, slow down to a stop.");
+            break;
+    }
 
 ​
 
