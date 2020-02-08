@@ -28,4 +28,4 @@ function addition(a,b){
     return a+b;
 }
 
-// console.log (addition("I and Love ", "And You"));
+console.log (addition("I and Love ", "And You"));
