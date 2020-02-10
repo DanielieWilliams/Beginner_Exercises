@@ -17,13 +17,6 @@
  */
 
 
-// var numberOfItems = Number(prompt("How many items are you buying?"));
-// var offerIsValid = confirm(prompt("Is the offer valid?"));
-// var isPremiumMember = confirm(prompt("Are you a premium member?"));
-//
-// var discountAppliedStatus = offerIsValid  &&  (isPremiumMember || numberOfItems > 2);
-// alert("Can use discount:" + discountAppliedStatus);
-
 
 var number = Number(prompt("Would you like to enter a number?"));
 var numberInput = confirm(prompt("Enter number here."));
@@ -34,28 +27,19 @@ var isNotANumber = confirm(prompt("What you entered is not a number"));
 
 // REFRACTOR INTO A FUNCTION //
 
-function number(
-
-4
-)
-;
+function number(4);
 {
-    var number
-    ("1 - 100");
+    var number("1 - 100");
 }
 if numberInput = ("even");
 {
     alert("Number Is Even!");
-}
-else
-if numberInput("odd");
+}else if numberInput("odd");
 alert("Number Is Odd!");
 {
     if numberInput = ("100");
 }
-{
-    alert("Number is even.");
-}
+{alert("Number is even.");
 }
 defaultStatus: isNotANumber("Not a number.");
 
