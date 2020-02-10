@@ -1,11 +1,11 @@
 "use strict";
 
 
-Function Drills
-
-Functions using conditionals but not loops or arrays:
-
-    Make a function named isOdd(number)
+// Function Drills
+//
+// Functions using conditionals but not loops or arrays:
+//
+//     Make a function named isOdd(number)
 
 
 // Make a function named isEven(number)
@@ -136,3 +136,43 @@ Functions using conditionals but not loops or arrays:
 //
 //     The function will return true if the username is not the same as the password and the user is at least 18 years old. If the user is an admin, they do not have to be a certain age but the password must still not match the username.
 //
+
+
+
+//Define a function named isOdd that takes in a single input. If the input is an odd number or a string containing an odd number, return true. Any other input should return false.
+
+
+function isodd(input){
+    return input === 0;
+
+}
+// console.log(isOdd("2"));
+
+// Define a function named notAString that takes in any input and returns true if the input provided is not a string.
+
+
+function notAString(input)
+return input !notAString;
+
+console.log(notAString(2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
