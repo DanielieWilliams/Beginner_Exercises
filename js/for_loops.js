@@ -69,10 +69,17 @@
 
 // var triangle = '';
 //
-// for(var row =1; row <= 7; row++)
+// for(var row =1; row <= 10; row++)
 //     triangle += '1' .repeat(row) + '\n';
 //
 // console.log(triangle);
+
+//WALK THROUGH WITH VIVIAN//
+
+// for(var row =1; row < 10; row++) {
+//     console.log(row.toString().repeat(row));
+// }
+
 
 // 5.
 // 100
@@ -95,6 +102,8 @@
 // 15
 // 10
 // 5
+//MAKING NUMBERS GO BACKWARD
+
 
 // for (var i = 100; i > 0; i -= 5) {
 //     if (i % 5 === 0) {

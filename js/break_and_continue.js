@@ -38,13 +38,55 @@
 // Here is an odd number: 49
 
 
-for(var i = 1; i <= 50; i ++) {
-    var randomNumber = Math.floor(Math.random() * 50) + 1;
-        { if (i === 50)
-        console.log("Yikes! Skipping number :" + "27");
-        break;
-             if ( i === 50)
-            continue;
-            }
-        console.log("Here is an odd number : " + randomNumber);
-        }
+// for(var i = 1; i <= 50; i ++) {
+//     var randomNumber = Math.floor(Math.random() * 50) + 1;
+//         { if (i === 50)
+//         console.log("Yikes! Skipping number :" + "27");
+//         break;
+//              if ( i === 50)
+//             continue;
+//             }
+//         console.log("Here is an odd number : " + randomNumber);
+//         }
+
+
+//WALKTHROUGH FROM VIVIAN//
+
+// do{ var userNumber=Number(prompt("Please enter a number between 1 and 50"));
+//
+//     if(userNumber < 1 || userNumber > 50){
+//         alert(userNumber + "is not between 1 and 50, please enter again");
+//     }else if (userNumber % 2 === 0){
+//         alert(userNumber("Is not odd, please enter again"));
+//     }else if ( isNan(userNumber)){
+//         alert(userNumber ("is not a number! Please enter again."));
+//     }else{
+//     }alert("Congrats, you picked the correct number!");
+//     break;
+//
+//     }while (true);
+//
+//     for(var i = 1; i <= 50; i ++) {
+//
+//     if (i % 2 === 0) {
+//         continue;
+//     }
+//     if (i === userNumber) {
+//         console.log("Yikes! Skipping number :" + "27");
+//     } else {
+//         console.log("Here is an odd number : " + i);
+//     }
+// }
+
+//SECOND WALK THROUGH
+
+// for(var i = 1; i <= 50; i +=2) {
+//         { if (i === 50)
+//         console.log("Yikes! Skipping number :" + "50");
+//         continue;
+//
+//             }
+//         console.log("Here is an odd number : " + randomNumber);
+//         }
+
+
