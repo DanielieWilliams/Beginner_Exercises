@@ -11,7 +11,7 @@
 // }
 
 //EXERCISE 3//
-
+//
 // var allCones = Math.floor(Math.random() * 50) + 50;
 // console.log(allCones);
 //
@@ -30,6 +30,6 @@
 //
 //     } while (allCones > 0) ;
 // console.log("Sorry I'm sold out!");
-
+//
 
 
