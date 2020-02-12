@@ -53,19 +53,54 @@
 // 999999999
 
 
-
-//
-// START OF ONE//
-for (var i = 1; i <= 9; i++ <= i)
-    console.log(i *=1);
-
 // MAYBE THIS ONE. WORKING ON GETTING IT TO LOOK LIKE A TRIANGLE//
 // var totalNumberOfRows = 9;
-// var arr = new Array();
-// for (var i = 1; i <= totalNumberOfRows; i++) {
+
+// for (var i = 0; i <=9; i++) {
 //     for (var j = 1; j <= i; j++) {
 //         arr.push(j);
 //         console.log(j);
 //     }
 //     console.log("\n");
 // }
+
+
+// FOUND A SOLUTION ON STACK OVERFLOW BUT NOW NEED TO FIGURE OUT HOW TO MAKE REPEATING NUMBERS
+
+// var triangle = '';
+//
+// for(var row =1; row <= 7; row++)
+//     triangle += '1' .repeat(row) + '\n';
+//
+// console.log(triangle);
+
+// 5.
+// 100
+// 95
+// 90
+// 85
+// 80
+// 75
+// 70
+// 65
+// 60
+// 55
+// 50
+// 45
+// 40
+// 35
+// 30
+// 25
+// 20
+// 15
+// 10
+// 5
+
+// for (var i = 100; i > 0; i -= 5) {
+//     if (i % 5 === 0) {
+//         console.log(i);
+//     }
+// }
+
+
+

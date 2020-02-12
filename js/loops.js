@@ -150,7 +150,7 @@ while (i >= 1){
 
 // TODO: Using a for loop, log all numbers divisible by 5, from 0 - 100;
 
-
+//
 // for (var i = 0; i <=100; i ++){
 //     if % 5 === 0){
 //     console.log(i);
@@ -167,16 +167,16 @@ while (i >= 1){
 
 
 
-// for (var i = 0; i <=100; i ++){
-//     if % 15 === 0){
-//     console.log("Fizzbuzz");
-// }else if ( i % 3 === 0){
-// }console.log("Fizz");
-// }else if ( i % 5 === 0){
-// }console.log("Buzz");
-// }else{
-//     console.log(i);
-// }
+for (var i = 0; i <=100; i ++){
+    if (i % 15 === 0){
+    console.log("Fizzbuzz");
+}else if ( i % 3 === 0){
+}console.log("Fizz");
+}else if ( i % 5 === 0){
+}console.log("Buzz");
+}else{
+    console.log(i);
+}
 
 
 
@@ -204,12 +204,12 @@ while (i >= 1){
 
 
 // We can get an iteration to skip using continue;
-for (var i = 1; i < 100; i++) {
-
-	if (i % 2 !== 0) {
-		// skipping all odd numbers;
-		continue;
-	}
-
-	console.log('Here is a lovely even number: ' + i);
-}
+// for (var i = 1; i < 100; i++) {
+//
+// 	if (i % 2 !== 0) {
+// 		// skipping all odd numbers;
+// 		continue;
+// 	}
+//
+// 	console.log('Here is a lovely even number: ' + i);
+// }
