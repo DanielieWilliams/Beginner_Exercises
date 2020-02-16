@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <title>Welcome to Pizza World!</title>
+    <style>
+        #main-jumbotron {
+            background-image: url("img/pizza.png");
+            background-size: cover;
+            background-position: center;
+            color: dimgrey;
+            text-align: center;
+            height: 25vh;
+        }
+
+        #jumbotron-container {
+
+        }
+
+        .embed-responsive .card-img-top {
+            object-fit: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="../codeup-web-exercises/css/custom.css">
+</head>
+<body>
+<nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza World</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Order Online <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <form class="form-inline my-2 my-lg-0">
+                <input aria-label="zipCode" class="form-control mr-sm-2" placeholder="zipCode" type="zipCode">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Stores Near You
+                </button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid" id="main-jumbotron">
+        <div class="container" id="jumbotron-container">
+        </div>
+        <h1 class="display-4">Welcome to Pizza World!</h1>
+
+    </div>
+    <div>
+        <nav>
+            <div>
+                <h2>Create Your Own Pizza!</h2>
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Size & Crust</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cheese & Sauce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vegetable Toppings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Meat Toppings</a>
+                        </li>
+                    </ul>
+                    <div></div>
+
+
+                    <!--<div>-->
+                    <!--                    <div class="card" style="width: 100rem;">-->
+                    <!--                        <div class="card-body">-->
+                    <!--                            <div class="card-header text-white p-3 bg-primary">Choose Size & Crust</div>-->
+                    <!--                            <h5 class="card-title">Choose Size & Crust</h5>-->
+                    <!--                        </div>-->
+                    <!--                        <ul class="list-group list-group-flush">-->
+                    <!--                            <li class="list-group-item">Cras justo odio</li>-->
+                    <!--                            <li class="list-group-item">Dapibus ac facilisis in</li>-->
+                    <!--                            <li class="list-group-item">Vestibulum at eros</li>-->
+                    <!--                        </ul>-->
+                    <!--                        <div class="card-body">-->
+                    <!--                            <a href="#" class="card-link">Card link</a>-->
+                    <!--                            <a href="#" class="card-link">Another link</a>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+
+                    <div class="card" style="max-width: 400rem;">
+                        <div class="card-header text-white p-3 bg-primary">Choose Your Size & Crust</div>
+                        <div class="card-body">
+
+                            <div class="card" style="max-width: 98rem;">
+                                <div class="card-header text-black bg-lightgrey mb-3">Hand Tossed</div>
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text">Garlic seasoned crust with a rich, buttery taste.</p>
+                                    <div class="custom-control custom-radio">
+                                        <input class="custom-control-input" id="customRadio1" name="customRadio"
+                                               type="radio">
+                                        <label class="custom-control-label" for="customRadio1">Small (10")</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input class="custom-control-input" id="customRadio2" name="customRadio"
+                                               type="radio">
+                                        <label class="custom-control-label" for="customRadio2">Medium (12")</label>
+                                    </div>
+                                </div>
+                                <div class="card" style="max-width: 98rem;">
+                                    <div class="card-header text-black bg-lightgrey mb-3">Crispy Thin</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Thin enough for optimum crispy to crunchy ratio.</p>
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" id="customRadio1" name="customRadio"
+                                                   type="radio">
+                                            <label class="custom-control-label" for="customRadio1">Medium (14")</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" id="customRadio2" name="customRadio"
+                                                   type="radio">
+                                            <label class="custom-control-label" for="customRadio2">Large (14")</label>
+
+                                            <div>
+
+
+                                                <!--                                <div class="card border-secondary mb-3" style="max-width: 98rem;">-->
+                                                <!--                                    <div class="card-header">Hand Tossed</div>-->
+                                                <!--                                    <div class="card-body text-secondary">-->
+                                                <!--                                        <h5 class="card-title">Garlic seasoned crust with rich, buttery taste.</h5>-->
+                                                <!--                                        <div class="custom-control custom-radio">-->
+                                                <!--                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">-->
+                                                <!--                                            <label class="custom-control-label" for="customRadio1">Small (10")</label>-->
+                                                <!--                                            <div class="custom-control custom-radio">-->
+                                                <!--                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">-->
+                                                <!--                                            <label class="custom-control-label" for="customRadio2">Medium (12")</label>-->
+                                                <!--                                            </div>-->
+                                                <!--                                        </div>-->
+                                                <!--                                    </div>-->
+                                                <!--                                <div class="card border-secondary mb-3" style="max-width: 98rem;">-->
+                                                <!--                                    <div class="card-header">Crispy Thin</div>-->
+                                                <!--                                    <div class="card-body text-secondary">-->
+                                                <!--                                        <h6 class="card-title">Thin enough to optimum crispy to crunchy ratio.</h6>-->
+                                                <!--                                        <div class="custom-control custom-radio">-->
+                                                <!--                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">-->
+                                                <!--                                            <label class="custom-control-label" for="customRadio1">Medium (12")</label>-->
+                                                <!--                                            <div class="custom-control custom-radio">-->
+                                                <!--                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">-->
+                                                <!--                                                <label class="custom-control-label" for="customRadio2">Large(14')</label>-->
+                                                <!--                                            </div>-->
+                                                <!--                                        </div>-->
+                                                <!--                                    </div>-->
+                                                <!--                                </div>-->
+
+
+                                            </div>
+                                        </div>
+
+                                        <!--                        <div class="container">-->
+                                        <!--                            <h2>Build Your Own Pizza!</h2>-->
+                                        <!--                            <p><em>You may choose as many toppings</em></p>-->
+                                        <!--                            <ul class="nav nav-tabs">-->
+                                        <!--                                <li class="active"><a data-toggle="tab" href="#home">Menu</a></li>-->
+                                        <!--                                <li><a data-toggle="tab" href="#menu1">Size & Crust</a></li>-->
+                                        <!--                                <li><a data-toggle="tab" href="#menu2">Cheese & Sauce</a></li>-->
+                                        <!--                                <li><a data-toggle="tab" href="#menu3">Meat Toppings</a></li>-->
+                                        <!--                                <li><a data-toggle="tab" href="#menu3">Vegetable Toppings</a></li>-->
+                                        <!--                            </ul>-->
+
+                                        <!--                            <div class="tab-content">-->
+                                        <!--                                <div id="home" class="tab-pane fade in active">-->
+                                        <!--                                    <h3>HOME</h3>-->
+                                        <!--                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+                                        <!--                                </div>-->
+                                        <!--                                <div id="menu1" class="tab-pane fade">-->
+                                        <!--                                    <h3>Menu 1</h3>-->
+                                        <!--                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                                        <!--                                </div>-->
+                                        <!--                                <div id="menu2" class="tab-pane fade">-->
+                                        <!--                                    <h3>Menu 2</h3>-->
+                                        <!--                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>-->
+                                        <!--                                </div>-->
+                                        <!--                                <div id="menu3" class="tab-pane fade">-->
+                                        <!--                                    <h3>Menu 3</h3>-->
+                                        <!--                                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
+                                        <!--                                </div>-->
+                                        <!--                            </div>-->
+                                        <!--                        </div>-->
+                                        <!--                        <ul class="nav nav-pills">-->
+                                        <!--                            <li class="nav-item">-->
+                                        <!--                                <a class="nav-link active" href="#">Menu</a>-->
+                                        <!--                            </li>-->
+                                        <!--                            <li class="nav-item dropdown">-->
+                                        <!--                                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Choose Your Size</a>-->
+                                        <!--                                <div class="dropdown-menu">-->
+                                        <!--                                    <a class="dropdown-item" href="#">Small</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Medium</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Large</a>-->
+                                        <!--                                    <div class="dropdown-divider"></div>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Extra Large</a>-->
+                                        <!--                                -->
+                                        <!--                            </li>-->
+                                        <!--                            <li class="nav-item dropdown">-->
+                                        <!--                                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Choose Your Crust</a>-->
+                                        <!--                                <div class="dropdown-menu">-->
+                                        <!--                                    <a class="dropdown-item" href="#">Hand Tossed</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Brooklyn Style</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Detroit Style</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Chicago Style</a>-->
+                                        <!--                                    <div class="dropdown-divider"></div>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Separated link</a>-->
+                                        <!--                                </li>-->
+                                        <!--                            <li class="nav-item dropdown">-->
+                                        <!--                                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Meat Toppings</a>-->
+                                        <!--                                <div class="dropdown-menu">-->
+                                        <!--                                    <a class="dropdown-item" href="#">Pepperoni</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Beef Crumbles</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Prosciutto de Parma</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Salumi</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Speck Dell Alto Adige</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Italian Sausage</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Anchovie</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">N'Duja Sausage</a>-->
+                                        <!--                                    <div class="dropdown-divider"></div>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Separated link</a>-->
+                                        <!--                                </li>-->
+                                        <!--                            <li class="nav-item dropdown">-->
+                                        <!--                                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Vegetable Toppings</a>-->
+                                        <!--                                <div class="dropdown-menu">-->
+                                        <!--                                    <a class="dropdown-item" href="#">San Marzano Tomatoes</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Basil Leaves</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Roasted Red Peppers</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Shiitake Mushrooms</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Black Olives</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Green Olives</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Red Onions</a>-->
+                                        <!--                                    <a class="dropdown-item" href="#">N'Duja Sausage</a>-->
+                                        <!--                                    <div class="dropdown-divider"></div>-->
+                                        <!--                                    <a class="dropdown-item" href="#">Separated link</a>-->
+                                        <!--                                </li>-->
+                                        <!--                            -->
+                                        <!--                        </ul>-->
+                                        <!--                    </nav>-->
+
+
+</body>
+</html>
