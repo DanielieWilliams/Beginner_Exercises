@@ -158,13 +158,17 @@ var books = [
 ];
 
 
-books.forEach(function(currentValue, index, arr)
-{ console.log(currentValue.books);
 
     console.log("Here are 5 Books that would be good for personal development as a developer");
+    books.forEach(function(book, index, arr)
+    { console.log(books);
 
-    console.log(books[0].title + books[0].author.firstName + books[0].author.lastName);
-//push push push
+    // console.log(books[0].title + books[0].author.firstName + books[0].author.lastName);
+    // console.log(books[1].title + books[1].author.firstName + books[1].author.lastName);
+    // console.log(books[2].title + books[2].author.firstName + books[2].author.lastName);
+    // console.log(books[3].title + books[3].author.firstName + books[3].author.lastName);
+    // console.log(books[4].title + books[4].author.firstName + books[4].author.lastName);
+
 
 });
 
