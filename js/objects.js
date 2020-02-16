@@ -17,7 +17,7 @@
     person.firstName = "Rick";
     person.lastName = "Sanchez";
     console.log(person.firstName + "", person.lastName);
-
+//
 
 
 
@@ -64,20 +64,16 @@
         ];
 
 
-        var person = {};
-         person.firstName = "Cameron";
-         console.log(person.firstName);
-         amount = 180;
-         console.log(amount);
          shoppers.forEach(function(payment) {
-            if (payment.amount > 200) {
-                return console.log(200 * .12 + " " + "dollar discount");
+            if (payment.amount >= 200) {
+                return console.log("You get a $" + payment.amount * .12 + " " + "discount. " + "Your Total is Now: " + "$" + ((payment.amount) - (payment.amount * .12)  ));
             } else (payment.amount < 200);
             {
-                return console.log(["Sorry, you don't get a discount on this transaction."]);
+                return console.log("Sorry, you don't get a discount on this transaction.");
 
             }
         });
+
 
 
 
@@ -109,8 +105,8 @@
 //      * > console.log(books[0].author.firstName) // "Douglas"
 //      * > console.log(books[0].author.lastName) // "Adams"
 //      */
-
-
+//
+//
 var books = [
     {
         title: "The Challenges of Coding with a Disability ",
@@ -163,6 +159,7 @@ var books = [
     books.forEach(function(book, index, arr)
     { console.log(books);
 
+
     // console.log(books[0].title + books[0].author.firstName + books[0].author.lastName);
     // console.log(books[1].title + books[1].author.firstName + books[1].author.lastName);
     // console.log(books[2].title + books[2].author.firstName + books[2].author.lastName);
@@ -170,7 +167,7 @@ var books = [
     // console.log(books[4].title + books[4].author.firstName + books[4].author.lastName);
 
 
-});
+// });
 
 
 
@@ -202,6 +199,70 @@ var books = [
 //      *      ...
 //      */
 //
+//
+//
+//
+// var books = [
+//     {
+//         Title: "The Challenges of Coding with a Disability ",
+//         Author: {
+//             firstName: "Marie ",
+//             lastName: "Williams",
+//
+//         }
+//     },
+//     {
+//         Title: "Cooking Up Code ",
+//         Author: {
+//             firstName: "Chef Euler ",
+//             lastName: "Gauss",
+//
+//
+//         }
+//     },
+//     {
+//         Title: "Arrays of Sunshine ",
+//         Author: {
+//             firstName: "Byron ",
+//             lastName: "Lovelace",
+//
+//         }
+//     },
+//     {
+//
+//         Title: "We Coded With A Code That Was More Than Code ",
+//         Author: {
+//             firstName: "Edgar Allan ",
+//             lastName: "Poe",
+//         }
+//     },
+//     {
+//
+//         Title: "Bicycles and Code ",
+//         Author: {
+//             firstName: "The Gaussian ",
+//             lastName: "Group",
+//
+//         }
+//     },
+//
+// ];
+//
+// books.indexOf(books);
+//
+// console.log(books[0].title + books[0].author.firstName + books[0].author.lastName);
+// console.log(books[1].title + books[1].author.firstName + books[1].author.lastName);
+// console.log(books[2].title + books[2].author.firstName + books[2].author.lastName);
+// console.log(books[3].title + books[3].author.firstName + books[3].author.lastName);
+// console.log(books[4].title + books[4].author.firstName + books[4].author.lastName);
+
+
+
+
+
+
+
+
 //     /**
 //      * Bonus:
 //      * - Create a function named `createBook` that accepts a title and author
@@ -213,5 +274,5 @@ var books = [
 //      *   `showBookInfo` function.
 //      */
 //
-// })();
+})();
 
