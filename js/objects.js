@@ -66,7 +66,7 @@
 
          shoppers.forEach(function(payment) {
             if (payment.amount >= 200) {
-                return console.log("You get a $" + payment.amount * .12 + " " + "discount. " + "Your Total is Now: " + "$" + ((payment.amount) - (payment.amount * .12)  ));
+                return console.log("Your discount applied gets you a $" + payment.amount * .12 + " " + "discount! " + "Your Total is Now: " + "$" + ((payment.amount) - (payment.amount * .12)  ));
             } else (payment.amount < 200);
             {
                 return console.log("Sorry, you don't get a discount on this transaction.");
@@ -76,10 +76,7 @@
 
 
 
-
-
-
-/// < $200 get a 12% discount
+         /// < $200 get a 12% discount
 //// use conditionals /// Ryan needs to pay/// George needs to pay/// Cam//
 ///Ryan $250 ////George $320 /// Cameron $180///
 ////name of person
@@ -107,67 +104,60 @@
 //      */
 //
 //
-var books = [
-    {
-        title: "The Challenges of Coding with a Disability ",
-        author: {
-            firstName: "Marie ",
-            lastName: "Williams",
-
-        }
-    },
-    {
-        title: "Cooking Up Code ",
-        author: {
-            firstName: "Chef Euler ",
-            lastName: "Gauss",
-
-
-        }
-    },
-    {
-        title: "Arrays of Sunshine ",
-        author: {
-            firstName: "Byron ",
-            lastName: "Lovelace",
-
-        }
-    },
-    {
-
-        title: "We Coded With A Code That Was More Than Code ",
-        author: {
-            firstName: "Edgar Allan ",
-            lastName: "Poe",
-        }
-    },
-    {
-
-        title: "Bicycles and Code ",
-        author: {
-            firstName: "The Gaussian ",
-            lastName: "Group",
-
-        }
-    },
-
-];
-
-
-
-    console.log("Here are 5 Books that would be good for personal development as a developer");
-    books.forEach(function(book, index, arr)
-    { console.log(books);
-
-
-    // console.log(books[0].title + books[0].author.firstName + books[0].author.lastName);
-    // console.log(books[1].title + books[1].author.firstName + books[1].author.lastName);
-    // console.log(books[2].title + books[2].author.firstName + books[2].author.lastName);
-    // console.log(books[3].title + books[3].author.firstName + books[3].author.lastName);
-    // console.log(books[4].title + books[4].author.firstName + books[4].author.lastName);
-
-
+// var books = [
+//     {
+//         title: "The Challenges of Coding with a Disability ",
+//         author: {
+//             firstName: "Marie ",
+//             lastName: "Williams",
+//
+//         }
+//     },
+//     {
+//         title: "Cooking Up Code ",
+//         author: {
+//             firstName: "Chef Euler ",
+//             lastName: "Gauss",
+//
+//
+//         }
+//     },
+//     {
+//         title: "Arrays of Sunshine ",
+//         author: {
+//             firstName: "Byron ",
+//             lastName: "Lovelace",
+//
+//         }
+//     },
+//     {
+//
+//         title: "We Coded With A Code That Was More Than Code ",
+//         author: {
+//             firstName: "Edgar Allan ",
+//             lastName: "Poe",
+//         }
+//     },
+//     {
+//
+//         title: "Bicycles and Code ",
+//         author: {
+//             firstName: "The Gaussian ",
+//             lastName: "Group",
+//
+//         }
+//     },
+//
+// ];
+//
+//
+//
+//     console.log("Here are 5 Books that would be good for personal development as a developer");
+//     books.forEach(function(book, index, arr)
+//     { console.log(book.title + book.author.firstName + book.author.lastName);
 // });
+
+
 
 
 
@@ -201,60 +191,62 @@ var books = [
 //
 //
 //
-//
-// var books = [
-//     {
-//         Title: "The Challenges of Coding with a Disability ",
-//         Author: {
-//             firstName: "Marie ",
-//             lastName: "Williams",
-//
-//         }
-//     },
-//     {
-//         Title: "Cooking Up Code ",
-//         Author: {
-//             firstName: "Chef Euler ",
-//             lastName: "Gauss",
-//
-//
-//         }
-//     },
-//     {
-//         Title: "Arrays of Sunshine ",
-//         Author: {
-//             firstName: "Byron ",
-//             lastName: "Lovelace",
-//
-//         }
-//     },
-//     {
-//
-//         Title: "We Coded With A Code That Was More Than Code ",
-//         Author: {
-//             firstName: "Edgar Allan ",
-//             lastName: "Poe",
-//         }
-//     },
-//     {
-//
-//         Title: "Bicycles and Code ",
-//         Author: {
-//             firstName: "The Gaussian ",
-//             lastName: "Group",
-//
-//         }
-//     },
-//
-// ];
-//
-// books.indexOf(books);
-//
-// console.log(books[0].title + books[0].author.firstName + books[0].author.lastName);
-// console.log(books[1].title + books[1].author.firstName + books[1].author.lastName);
-// console.log(books[2].title + books[2].author.firstName + books[2].author.lastName);
-// console.log(books[3].title + books[3].author.firstName + books[3].author.lastName);
-// console.log(books[4].title + books[4].author.firstName + books[4].author.lastName);
+
+var books = [
+    {
+        BookNumber: 0,
+        Title: "The Challenges of Coding with a Disability ",
+        Author: {
+            fullName: "Marie ",
+            lastName: "Williams",
+
+        }
+    },
+    {
+        BookNumber: 1,
+        Title: "Cooking Up Code ",
+        Author: {
+            firstName: "Chef Euler ",
+            lastName: "Gauss",
+
+
+        }
+    },
+    {
+        BookNumber: 2,
+        Title: "Arrays of Sunshine ",
+        Author: {
+            firstName: "Byron ",
+            lastName: "Lovelace",
+
+        }
+    },
+    {
+        BookNumber: 3,
+        Title: "We Coded With A Code That Was More Than Code ",
+        Author: {
+            firstName: "Edgar Allan ",
+            lastName: "Poe",
+        }
+    },
+    {
+        BookNumber: 4,
+        Title: "Bicycles and Code ",
+        Author: {
+            firstName: "The Gaussian ",
+            lastName: "Group",
+
+        }
+    },
+
+];
+
+
+books.forEach(function(book, index, arr)
+{ console.log("Book # " + book.BookNumber + " " + book.Title + book.Author.firstName + book.Author.lastName);
+});
+
+
 
 
 
@@ -269,10 +261,18 @@ var books = [
 //      *   name and returns a book object with the properties described
 //      *   previously. Refactor your code that creates the books array to instead
 //      *   use your function.
+
+
 //      * - Create a function named `showBookInfo` that accepts a book object and
 //      *   outputs the information described above. Refactor your loop to use your
 //      *   `showBookInfo` function.
 //      */
 //
-})();
 
+function createBook (title, author){
+    var obj = {
+        title: title,
+        author: author,
+    };
+    return obj;
+}
