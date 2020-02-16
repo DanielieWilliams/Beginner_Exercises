@@ -247,7 +247,7 @@ books.forEach(function(book, index, arr)
 });
 
 
-
+///Will figure out indexOf later///
 
 
 
@@ -276,3 +276,4 @@ function createBook (title, author){
     };
     return obj;
 }
+////Will finish later///
