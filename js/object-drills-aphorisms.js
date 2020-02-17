@@ -324,7 +324,7 @@ var fiveQuotes = [ {
 
 //TODO: After doing this 'manually' why is a loop more beneficial?
 
-
+console.log("Because loops are faster, leaving more time for other projects.");
 
 //TODO: Write a function named 'formatQuote' that accepts an aphorism object and returns a string containing the quote and author in the format "quote" + "-author"
 /*
