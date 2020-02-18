@@ -74,7 +74,7 @@
             }
         });
 
-
+/////////WALKTHROUGH: You can use .toFixed and write it all in one if statement////////////////////
 
          /// < $200 get a 12% discount
 //// use conditionals /// Ryan needs to pay/// George needs to pay/// Cam//
@@ -104,58 +104,58 @@
 //      */
 //
 //
-// var books = [
-//     {
-//         title: "The Challenges of Coding with a Disability ",
-//         author: {
-//             firstName: "Marie ",
-//             lastName: "Williams",
-//
-//         }
-//     },
-//     {
-//         title: "Cooking Up Code ",
-//         author: {
-//             firstName: "Chef Euler ",
-//             lastName: "Gauss",
-//
-//
-//         }
-//     },
-//     {
-//         title: "Arrays of Sunshine ",
-//         author: {
-//             firstName: "Byron ",
-//             lastName: "Lovelace",
-//
-//         }
-//     },
-//     {
-//
-//         title: "We Coded With A Code That Was More Than Code ",
-//         author: {
-//             firstName: "Edgar Allan ",
-//             lastName: "Poe",
-//         }
-//     },
-//     {
-//
-//         title: "Bicycles and Code ",
-//         author: {
-//             firstName: "The Gaussian ",
-//             lastName: "Group",
-//
-//         }
-//     },
-//
-// ];
-//
-//
-//
-//     console.log("Here are 5 Books that would be good for personal development as a developer");
-//     books.forEach(function(book, index, arr)
-//     { console.log(book.title + book.author.firstName + book.author.lastName);
-// });
+var books = [
+    {
+        title: "The Challenges of Coding with a Disability ",
+        author: {
+            firstName: "Marie ",
+            lastName: "Williams",
+
+        }
+    },
+    {
+        title: "Cooking Up Code ",
+        author: {
+            firstName: "Chef Euler ",
+            lastName: "Gauss",
+
+
+        }
+    },
+    {
+        title: "Arrays of Sunshine ",
+        author: {
+            firstName: "Byron ",
+            lastName: "Lovelace",
+
+        }
+    },
+    {
+
+        title: "We Coded With A Code That Was More Than Code ",
+        author: {
+            firstName: "Edgar Allan ",
+            lastName: "Poe",
+        }
+    },
+    {
+
+        title: "Bicycles and Code ",
+        author: {
+            firstName: "The Gaussian ",
+            lastName: "Group",
+
+        }
+    },
+
+];
+
+
+
+    console.log("Here are 5 Books that would be good for personal development as a developer");
+    books.forEach(function(book, index, arr)
+    { console.log(book.title + book.author.firstName + book.author.lastName);
+});
 
 
 
@@ -248,6 +248,7 @@ books.forEach(function(book, index, arr)
 
 
 ///Will figure out indexOf later///
+///There are three optional parameters for forEach.
 
 
 

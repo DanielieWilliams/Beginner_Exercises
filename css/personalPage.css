@@ -3,6 +3,7 @@
 .grid1{
     justify-content: center;
     background: transparent;
+    align-content: center;
     display: grid;
     grid-template-rows:  repeat(2, auto);
     grid-template-columns: 50% 50%;
@@ -64,6 +65,8 @@ body {
 /*NAV BAR*/
 .mainNavBar {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     justify-content: space-around;
     background-color: whitesmoke;
     height: 50px;
