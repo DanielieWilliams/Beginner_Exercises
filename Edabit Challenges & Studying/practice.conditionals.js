@@ -156,10 +156,6 @@ switch(analyzeColor){
 }
 
 
-
-
-
-
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -168,6 +164,11 @@ switch(analyzeColor){
  */
 
 /* ########################################################################## */
+var color=(prompt("Please enter a color"));
+alert("")
+
+
+
 
 /**
  * TODO:
