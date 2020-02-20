@@ -1,5 +1,6 @@
 "user strict";
 
+
 function fizzbuzz(input) {
     if (input % 15 === 0) {
 
@@ -29,128 +30,172 @@ for (var i = 0; i <= 100; i++) {
         console.log(i);
     }
 }
-///////////////////
+/////////////////
+function isOdd(num) {
+    if (num === "string") {
+        return false;
+    } else if (num === "Boolean") {
+        return false;
+    } else if (num % 2 === 0) {
+        return false;
+    } else {
+    }
+    return true;
+}
+console.log(isOdd('pool')); //true
 
-// ////Anonymous Functions///
-//
-//
-// var increment = function(x) {
-//     return x + 1;
-// };
-//
-// var square = increment(3);
-//
-// console.log(increment(4));
-// console.log(increment(4)+ square);
-//
-//
-//
-// ///Arguments and Parameters///
-//
-//
-// function sum(a, b) {
-//     var result = a + b; // technically the `result` variable is not necessary
-//     return result;      // instead we could just return a + b directly
+
+//// ALWAYS parseFloat your cakes. converts string to numbers. /////////
+isNaN when youre looking for numbers and comparing////
+
+
+
+
+////////////////JS Assessment 1//////
+
+function isNumeric(value){
+    return !isNaN(parseFloat(value));
+}
+console.log(isNumeric(3.141));
+
+//////////
+
+// function increment(value){
+//     if(!isNaN(parseFloat(value)); {
 // }
+
+
+/////////long way///
+function increment(value){
+if(parseFloat(value) + 1) {
+    return value + 1;
+}else {
+    return false;
+}
+}
+console.log(increment(true));
+
+
+////Anonymous Functions///
+
+
+var increment = function(x) {
+    return x + 1;
+};
+
+var square = increment(3);
+
+console.log(increment(4));
+console.log(increment(4)+ square);
+
+
+
+///Arguments and Parameters///
+
+
+function sum(a, b) {
+    var result = a + b; // technically the `result` variable is not necessary
+    return result;      // instead we could just return a + b directly
+}
+
+var x = 3;
+var seven = sum(x, 4);
+
+console.log(sum(2,5));
+console.log(sum(x = 3, + seven));
+
+
+///Global Variables///
+
+// declare a global variable
+var globalVar = "Look, I'm Global!";
+
+// define the sayHello function
+function sayHello() {
+    // globalVar is accessible here since the sayHello function scope is a sub-scope of the global scope
+    alert(globalVar);
+}
+
+sayHello();
+
+///////
+
+var foodCart = "Tenko Ramen, here!";
+function hello(){
+    alert (foodCart);
+}
+hello();
+
+
+//////////LOCAL VARIABLES///////
+
+var globalVar = "Look, I'm Global!"; // declare a global variable
+
+function scopeExample() {
+    var localVar = "Look, I'm Local!"; // declare a local variable
+    alert(localVar); // localVar is accessible here
+    alert(globalVar); // globalVar is accessible here
+}
+
+scopeExample();
+
+//////
+
+var vendingMachine = "Please take your snack.";
+
+function snacks() {
+    var receipt = "Here is your change.";
+    alert(receipt);
+    alert(vendingMachine);
+}
+snacks();
+
+//////////// VARIABLE SUBSCOPES////
+
+
+var x = 300;
+var y = 100;
+
+function scopeExample() {
+    var x = 1;
+    var y = 2;
+    console.log('x: ' + x + ' y: ' + y); // x: 1 y: 2
+    return x + y;
+}
+
+console.log('x: ' + x + ' y: ' + y); // x: 300 y: 100
+// var returnValue = scopeExample();
+console.log(scopeExample());
+
+
+/////// IIFE Immediately-Invoked Function Expression//////
+
+// // define a function and immediately invoke (i.e. call) it
+// (function () {
+//     var iffeVar = "I'm local to the IIFE.";
+// })();
 //
-// var x = 3;
-// var seven = sum(x, 4);
-//
-// console.log(sum(2,5));
-// console.log(sum(x = 3, + seven));
-//
-//
-// ///Global Variables///
-//
-// // declare a global variable
-// var globalVar = "Look, I'm Global!";
-//
-// // define the sayHello function
-// function sayHello() {
-//     // globalVar is accessible here since the sayHello function scope is a sub-scope of the global scope
-//     alert(globalVar);
-// }
-//
-// sayHello();
-//
-// ///////
-//
-// var foodCart = "Tenko Ramen, here!";
-// function hello(){
-//     alert (foodCart);
-// }
-// hello();
-//
-//
-// //////////LOCAL VARIABLES///////
-//
-// var globalVar = "Look, I'm Global!"; // declare a global variable
-//
-// function scopeExample() {
-//     var localVar = "Look, I'm Local!"; // declare a local variable
-//     alert(localVar); // localVar is accessible here
-//     alert(globalVar); // globalVar is accessible here
-// }
-//
-// scopeExample();
-//
-// //////
-//
-// var vendingMachine = "Please take your snack.";
-//
-// function snacks() {
-//     var receipt = "Here is your change.";
-//     alert(receipt);
-//     alert(vendingMachine);
-// }
-// snacks();
-//
-// //////////// VARIABLE SUBSCOPES////
-//
-//
-// var x = 300;
-// var y = 100;
-//
-// function scopeExample() {
-//     var x = 1;
-//     var y = 2;
-//     console.log('x: ' + x + ' y: ' + y); // x: 1 y: 2
-//     return x + y;
-// }
-//
-// console.log('x: ' + x + ' y: ' + y); // x: 300 y: 100
-// // var returnValue = scopeExample();
-// console.log(scopeExample());
-//
-//
-// /////// IIFE Immediately-Invoked Function Expression//////
-//
-// // // define a function and immediately invoke (i.e. call) it
-// // (function () {
-// //     var iffeVar = "I'm local to the IIFE.";
-// // })();
-// //
-// // alert(iffeVar); // undefined
-// /////////// ASK ABOUT IFFE//////
-//
-//
-// ///////HOISTING////
-//
-// 'use strict';
-//
-// sayHello1(); // Greetings from sayHello1.
-// // sayHello2(); // Uncaught TypeError: Property 'sayHello2' of object [object Object] is not a function
-//
-// // declare a function in the global scope
-// function sayHello1 () {
-//     alert('Greetings from sayHello1.');
-// }
-//
-// // assign a function to a variable named sayHello2
-// var sayHello2 = function () {
-//     alert('Greetings from sayHello2.');
-// };
-// sayHello2();
+// alert(iffeVar); // undefined
+/////////// ASK ABOUT IFFE//////
+
+
+///////HOISTING////
+
+'use strict';
+
+sayHello1(); // Greetings from sayHello1.
+// sayHello2(); // Uncaught TypeError: Property 'sayHello2' of object [object Object] is not a function
+
+// declare a function in the global scope
+function sayHello1 () {
+    alert('Greetings from sayHello1.');
+}
+
+// assign a function to a variable named sayHello2
+var sayHello2 = function () {
+    alert('Greetings from sayHello2.');
+};
+sayHello2();
 //
 // /////////////////////////////FUNCTIONS EXERCISE //////////////////////
 //
@@ -163,12 +208,12 @@ for (var i = 0; i <= 100; i++) {
 //  * > sayHello("codeup") // returns "Hello, codeup!"
 //  */
 //
-//
-// function sayHello(name){
-//     return "hello, " + name;
-// }
-// console.log(sayHello("codeup!"));
-//
+
+function sayHello(name){
+    return "hello, " + name;
+}
+console.log(sayHello("codeup!"));
+
 //
 //
 // /**
@@ -180,8 +225,8 @@ for (var i = 0; i <= 100; i++) {
 //  */
 //
 //
-// var helloMessage = sayHello("Danielie");
-// console.log(helloMessage);
+var helloMessage = sayHello("Danielie");
+console.log(helloMessage);
 //
 //
 // /**
@@ -191,13 +236,13 @@ for (var i = 0; i <= 100; i++) {
 //  * console.
 //  */
 //
-// var myName = sayHello("Danielie");
-// console.log(myName);
+var myName = sayHello("Danielie");
+console.log(myName);
 //
 //
 // // Don't modify the following line, it generates a random number between 1 and 3
 // // and stores it in a variable named random
-// var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 3) + 1);
 //
 // /**
 //  * TODO:
@@ -217,12 +262,12 @@ for (var i = 0; i <= 100; i++) {
 //  * number)
 //  */
 //
-// function isTwo(number){
-//     return (number % 2 === 0);
-//
-// }
-// console.log(isTwo(3));
-// console.log(isTwo(random));
+function isTwo(number){
+    return (number % 2 === 0);
+
+}
+console.log(isTwo(3));
+console.log(isTwo(random));
 //
 //
 // /**
@@ -237,11 +282,11 @@ for (var i = 0; i <= 100; i++) {
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
 //
-// function calculateTip(tipPercentage, billTotal){
-//     return (tipPercentage * billTotal);
-// }
-//
-// console.log(calculateTip(0.25 , 25.50));
+function calculateTip(tipPercentage, billTotal){
+    return (tipPercentage * billTotal);
+}
+
+console.log(calculateTip(0.25 , 25.50));
 //
 //
 // /**
@@ -251,14 +296,14 @@ for (var i = 0; i <= 100; i++) {
 //  * then display the dollar amount they should tip
 //  */
 //
-// function calculateTip(tipPercentage, billTotal){
-//     return (tipPercentage * billTotal);
-// }
-//
-// var billTotal = parseFloat(prompt("What is the total of you bill?"));
-// var tipPercentage = parseFloat(prompt('What percentage would you like to tip?'));
-//
-// alert ("Your tip is: " + calculateTip(tipPercentage, billTotal));
+function calculateTip(tipPercentage, billTotal){
+    return (tipPercentage * billTotal);
+}
+
+var billTotal = parseFloat(prompt("What is the total of you bill?"));
+var tipPercentage = parseFloat(prompt('What percentage would you like to tip?'));
+
+alert ("Your tip is: " + calculateTip(tipPercentage, billTotal));
 //
 //
 // /**
@@ -276,14 +321,14 @@ for (var i = 0; i <= 100; i++) {
 //  * > applyDiscount(45.99, 0.12) // 40.4712
 //  */
 //
-// function applyDiscount(prePrice, discPercen){
-//     return (prePrice - (discPercen * prePrice));
-// }
-// var prePrice = 500;
-// var discPercen = .20;
-//
-// console.log(applyDiscount(prePrice, discPercen));
-//
+function applyDiscount(prePrice, discPercen){
+    return (prePrice - (discPercen * prePrice));
+}
+var prePrice = 500;
+var discPercen = .20;
+
+console.log(applyDiscount(prePrice, discPercen));
+
 //
 //
 //
