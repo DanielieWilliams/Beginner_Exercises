@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl-csp.js'></script>
+
+<!--    For strict CSP environments without worker-src blob: ; child-src blob: enabled, there's a separate Mapbox GL JS bundle (mapbox-gl-csp.js and mapbox-gl-csp-worker.js) which requires setting the path to the worker manually:-->
+<!--    <script>-->
+<!--        mapboxgl.workerUrl = "https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl-csp-worker.js";-->
+<!--        ...-->
+<!--    </script>-->
+
+    <title>MapBox</title>
+
+</head>
+<body>
+<h1>MapBox</h1>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWVsaWVtIiwiYSI6ImNrNnR0eXpneTAyeXczZnBuOW93NzU0anMifQ.ILbKfvkJ94pQHOmFNZ_EVQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9'
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -40,25 +40,26 @@
     //BONUS// ////use stringWithBreaks ..... use " .join " /////////
 
     // var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus',
-    //     'Neptune'];
-    // console.log(planetsArray);
+        'Neptune'];
+    console.log(planetsArray);
     //
     // //sorting//
-    // console.log('Sorting planets');
-    // planets.sort();
-    // console.log(planets);
+    console.log('Sorting planets');
+    planets.sort();
+    console.log(planets);
     //
     //
     // //splitting//
-    // var planetsString = "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune";
-    // console.log(planetsString);
-    // var planetsArray = planetsString.split(',');
-    // console.log(planetsArray);
+    var planetsString = "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune";
+    console.log(planetsString);
+
+    var planetsArray = planetsString.split(',');
+    console.log(planetsArray);
     //
     // //joining//
-    // var planetsString = planetsArray.join(',');
-    // console.log("Joining planets array to unordered list.");
-    // console.log(planetsString);
+    var planetsString = planetsArray.join(',');
+    console.log("Joining planets array to unordered list.");
+    console.log(planetsString);
 
     var planetsString = "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune";
 
