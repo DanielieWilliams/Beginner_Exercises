@@ -1,0 +1,1 @@
+var mapboxToken = "pk.eyJ1IjoiZGFuaWVsaWVtIiwiYSI6ImNrNnR0eXpneTAyeXczZnBuOW93NzU0anMifQ.ILbKfvkJ94pQHOmFNZ_EVQ";

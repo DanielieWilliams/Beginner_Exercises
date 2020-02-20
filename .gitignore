@@ -1,3 +1,4 @@
 .idea/*
-*.iml
+*.imlk
 .DS_STORE
+js/key.js
