@@ -47,23 +47,6 @@ reverseGeocode({lng: -122.4350112, lat: 38.4044195}, mapboxToken).then(function(
     console.log(result);
 });
 
-///For Each Loop////
-var restaurantList = new mapboxgl.Marker()
-
-    .setLngLat(-97.7470346, 30.2639621)
-    .addTo(map)
-    .setPopup(popup);
-map.setZoom(2);
-popup.addTo(map);
-
-
-
-// var restaurantList = new mapboxgl.Marker()
-//     .setLngLat(-97.7285351, 30.2628459)
-//     .addTo(map)
-//     .setPopup(popup);
-// popup.addTo(map);
-
 
 ////////////////////////////HARD CODE RESTAURANT 1///
 
@@ -125,44 +108,44 @@ reverseGeocode({lng: 30.2639621, lat: -97.7470346}, mapboxToken).then(function(r
 
 ///Load Data/////
 var restaurants = {
-    "type": "Restaurant List",
-    "features": [
+    type: "Restaurant List",
+    features: [
         {
-            "type": "Restaurant",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
+            name: "Emmer & Rye",
+            geometry: {
+                type: "Point",
+                coordinates: [
                     -97.7470346, 30.2639621
                 ]
             },
-            "properties": {
-                "phoneFormatted": "(512) 366-5530",
-                "phone": "5123665530",
-                "address": "51 Rainey",
-                "city": "Austin",
-                "country": "United States",
+            properties: {
+                phoneFormatted: "(512) 366-5530",
+                phone: "5123665530",
+                address: "51 Rainey",
+                city: "Austin",
+                country: "United States",
 
-                "postalCode": "78701",
-                "state": "TX"
+                postalCode: "78701",
+                state: "TX"
             }
         },
         {
-            "type": "Restaurant",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -97.7470346, 30.2639621
+            name: "iL Brutto",
+            geometry: {
+                type: "Point",
+                coordinates: [
+                    -97.7285351, 30.2628459
                 ]
             },
-            "properties": {
-                "phoneFormatted": "(512) 580-8779",
-                "phone": "5125808779",
-                "address": "1601 E 6th St",
-                "city": "Austin",
-                "country": "United States",
+            properties: {
+                phoneFormatted: "(512) 580-8779",
+                phone: "5125808779",
+                address: "1601 E 6th St",
+                city: "Austin",
+                country: "United States",
 
-                "postalCode": "78702",
-                "state": "TX"
+                postalCode: "78702",
+                state: "TX"
             }
         },
 
@@ -174,25 +157,25 @@ var restaurants = {
 
     ///FOR EACH!!///
 
-restaurants.features.forEach(function(store, i){
-    restaurants.properties.id = i;
-});
+restaurants.features.forEach(function(store, i) {
+    restaurants.properties.id = [i]
+        .setLngLat(-97.7470346, 30.2639621)
+        .addTo(map)
+        .setPopup(popup);
+    map.setZoom(2);
+    popup.addTo(map);
 
-////////
+},
 
-map.on('load', function (e) {
+    restaurants.properties.id = [i]
+        .setLngLat(-97.7285351, 30.2628459)
+        .addTo(map)
+        .setPopup(popup);
+    map.setZoom(2);
+    popup.addTo(map);
 
-    map.addLayer({
-        "id": "locations",
-        "type": "symbol",
 
-        "source": {
-            "type": "geojson",
-            "data": restaurants
-        },
-        "layout": {
-            "icon-image": "restaurant-15",
-            "icon-allow-overlap": true,
-        }
-    });
-});
+
+
+
+
