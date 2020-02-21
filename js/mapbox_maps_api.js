@@ -2,8 +2,8 @@ mapboxgl.accessToken = mapboxToken;
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/navigation-guidance-day-v4',
-    zoom: 4,
-    center: [-122.4350112,38.404419]
+    zoom: 5,
+    center: [-122.4350112, 38.404419]
 });
 
 
@@ -13,7 +13,7 @@ var markerOptions = {
 };
 
 var marker = new mapboxgl.Marker(markerOptions)
-    .setLngLat([-122.4350112,38.404419])
+    .setLngLat([-122.4350112, 38.404419])
     .addTo(map);
 
 
@@ -67,7 +67,7 @@ marker.setPopup(popup).togglePopup();
 geocode("1601 E 6th St, Austin, TX 78702", mapboxToken).then(function(result){
     console.log(result);
     map.setCenter(result);
-    map.setZoom(10);
+    map.setZoom(5);
 
 
 });
@@ -75,9 +75,9 @@ geocode("1601 E 6th St, Austin, TX 78702", mapboxToken).then(function(result){
 reverseGeocode({lng: 30.2628459, lat: -97.7285351}, mapboxToken).then(function(result){
     console.log(result);
 });
-//
+
 // ///////////////HARDCODE RESTAURANT 2/////
-//
+
 var marker = new mapboxgl.Marker(markerOptions)
     .setLngLat([-97.7470346, 30.2639621])
     .addTo(map);
@@ -95,7 +95,7 @@ marker.setPopup(popup).togglePopup();
 geocode("SkyHouse, 51 Rainey St #110, Austin, TX 78701", mapboxToken).then(function(result){
     console.log(result);
     map.setCenter(result);
-    map.setZoom(10);
+    map.setZoom(5);
 
 
 });
@@ -157,22 +157,21 @@ var restaurants = {
 
     ///FOR EACH!!///
 
-restaurants.features.forEach(function(store, i) {
-    restaurants.properties.id = [i]
+restaurants.features.forEach(function(restaurants, i) {
+     var restaurantID = restaurants.properties.id = [i]
         .setLngLat(-97.7470346, 30.2639621)
         .addTo(map)
         .setPopup(popup);
-    map.setZoom(2);
+    map.setZoom(5);
     popup.addTo(map);
 
-},
+});
 
-    restaurants.properties.id = [i]
-        .setLngLat(-97.7285351, 30.2628459)
-        .addTo(map)
-        .setPopup(popup);
-    map.setZoom(2);
-    popup.addTo(map);
+
+
+
+
+
 
 
 
