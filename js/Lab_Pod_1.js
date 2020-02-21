@@ -68,8 +68,27 @@ console.log(getContainer("Candy"));
 // Player 1 serves the ball and makes Ping!.
 // Return an array of strings.
 
+// function pingPong(arr, win) {
+//     var final = arr.map(e => [e, "Pong!"]).flat();
+//     return win ? final : final.slice(0,final.length-1);
+// }
+
+
+
+const pingPong = ({ length }, win) =>
+    Array.from({ length: length * 2 - !win }, (_, i) =>
+        i % 2 ? 'Pong!' : 'Ping!',
+    );
+
+
 
 ////////////////////Fun//
 
 // Make a function called coinFlip() that returns either 0 or 1, randomly
+//Math.floor
 
+
+function coinFlip(input){
+    return Math.floor (Math.random() *2);
+}
+console.log(coinFlip(input);

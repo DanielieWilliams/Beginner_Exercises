@@ -1,5 +1,16 @@
 "user strict";
 
+///COIN FLIP///
+
+
+function coinFlip(){
+    return Math.floor (Math.random() *2);
+
+}
+console.log(coinFlip());
+
+
+////////////
 
 function fizzbuzz(input) {
     if (input % 15 === 0) {
@@ -46,7 +57,7 @@ console.log(isOdd('pool')); //true
 
 
 //// ALWAYS parseFloat your cakes. converts string to numbers. /////////
-isNaN when youre looking for numbers and comparing////
+// isNaN when youre looking for numbers and comparing////
 
 
 
