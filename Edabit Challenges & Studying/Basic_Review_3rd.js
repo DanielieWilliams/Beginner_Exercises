@@ -36,14 +36,25 @@
 //     ## Practice Problems
 // 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.
 
-//
-//     ```js
-//         filterNumbers(["fred", true, 5, 3]) //[3, 5]
-//     ```
-//
+   function filterNumbers(){
+        var filterNumbers = ["fred", false, 5, 3];
+        var splicedNumbers = filterNumbers.splice("fred", 2);
+        return filterNumbers.sort();
+    }
+    console.log(filterNumbers(["fred", false, 5, 3]));
+
+
+
+
+    // ```js
+    //     filterNumbers(["fred", false, 5, 3]) //[3, 5]
+    // // ```
+
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
 //
 //     ```js
+//
+//
 //     //Example Input:
 //
 //        [
@@ -84,7 +95,7 @@
 //          }
 //      ];
 //    ```
-//
+
 // 3. Write a function, `washCars()` that takes in a array of car objects and sets the boolean properties of isDirty to false
 //
 //     ```js
