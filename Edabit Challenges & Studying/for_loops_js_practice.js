@@ -22,7 +22,7 @@ function showMultiplicationTable(number){
 }showMultiplicationTable(7);
 
 
-// Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even. For example:
+// 2. Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even. For example:
 //
 // 123 is odd
 // 80 is even
@@ -40,11 +40,38 @@ for (var i = 20; i <= 29; i++) {
 }
 
 
+// 3. Create a for loop that uses console.log to create the output shown below.
+//
+//
+// 1
+// 22
+// 333
+// 4444
+// 55555
+// 666666
+// 7777777
+// 88888888
+// 999999999
+
+//When creating triangle outputs, replacing variable i with "row" helps with confusion. Use .toString and .repeat to repeat the row. //
+
+for (var row = 1; row <= 9; row++){
+    console.log(row.toString().repeat(row));
+}
+
+///For Console Logging Outer Loops//
+
+for(var outer = 1; outer < 10; outer++){
+    console.log("outer loop");
+    var output ="";
 
 
-
-
-
+for(var inner = 1; inner <= outer; inner++){
+    console.log("inside inner loop");
+    output += outer;
+}
+console.log(output);
+}
 
 
 
