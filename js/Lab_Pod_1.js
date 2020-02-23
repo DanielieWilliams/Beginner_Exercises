@@ -91,4 +91,4 @@ const pingPong = ({ length }, win) =>
 function coinFlip(input){
     return Math.floor (Math.random() *2);
 }
-console.log(coinFlip(input);
+console.log(coinFlip(input));
