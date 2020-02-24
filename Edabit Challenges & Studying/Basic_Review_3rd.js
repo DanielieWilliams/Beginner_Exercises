@@ -36,65 +36,87 @@
 //     ## Practice Problems
 // 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.
 
-   function filterNumbers(){
-        var filterNumbers = ["fred", false, 5, 3];
-        var splicedNumbers = filterNumbers.splice("fred", 2);
-        return filterNumbers.sort();
-    }
-    console.log(filterNumbers(["fred", false, 5, 3]));
+   // function filterNumbers(){
+   //      var filterNumbers = ["fred", false, 5, 3];
+   //      var splicedNumbers = filterNumbers.splice("fred", 2);
+   //      return filterNumbers.sort();
+   //  }
+   //  console.log(filterNumbers(["fred", false, 5, 3]));
 
 
 
+   /////ANOTHER WAY///
 
-    // ```js
+function filterNumbers(array) {
+    var bucket = [];
+    var arraySort = array.sort();
+    arraySort.forEach(function (number)
+    {
+        if (!isNaN(parseFloat(number))) {
+            bucket.push(number)
+        }
+    });
+
+    return bucket
+}
+console.log(filterNumbers(["ted", true, 5, 3]));
+
+
+
+   // ```js
     //     filterNumbers(["fred", false, 5, 3]) //[3, 5]
     // // ```
 
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
+// //
+//     function getOlder(name, breed, age) {
+//         this.age++;
+//         var dogObjects = {
 //
-//     ```js
+//             [
+//                 {
+//                     name: "Biscotti",
+//                     breed: "Lab",
+//                     age: 2
+//                 },
+//                 {
+//                     name: "Gnocchi",
+//                     breed: "Miniature Schnauzer",
+//                     age: 3
+//                 }
+//                 {
+//                     name: "Brewsy",
+//                     breed: "Mastif",
+//                     age: 10
 //
-//
-//     //Example Input:
-//
-//        [
-//         {
-//              name: "Chompers",
-//              breed: "Pug",
-//              age: 7
-//          },
-//          {
-//              name: "Freddy",
-//              breed: "Lab",
-//              age: 4
-//          },
-//          {
-//              name: "Mr. Pig",
-//              breed: "Mastif",
-//              age: 10
-//          }
-//      ];
-//    ```
-//     ```js
-//     //Example output
-//      [
-//         {
-//              name: "Chompers",
-//              breed: "Pug",
-//              age: 8
-//          },
-//          {
-//              name: "Freddy",
-//              breed: "Lab",
-//              age: 5
-//          },
-//          {
-//              name: "Mr. Pig",
-//              breed: "Mastif",
-//              age: 11
-//          }
-//      ];
-//    ```
+//             ];
+//                 }
+//     }
+//     console.log(dogObjects.age);
+
+   // js
+   // //  //Example output
+   // //   [
+   // //      {
+   // //           name: "Biscotti",
+   // //           breed: "Lab",
+   // //           age: 3
+   // //       },
+   // //       {
+   // //           name: "Gnocchi",
+   // //           breed: "Miniature Schnauzer",
+   // //           age: 4
+   // //       },
+   // //       {
+   // //           name: "Brewsky",
+   // //           breed: "Mastif",
+   // //           age: 11
+   // //       }
+   // //   ];
+   // // ```
+
+
+
 
 // 3. Write a function, `washCars()` that takes in a array of car objects and sets the boolean properties of isDirty to false
 //
