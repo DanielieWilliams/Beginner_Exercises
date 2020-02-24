@@ -36,12 +36,12 @@
 //     ## Practice Problems
 // 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.
 
-   // function filterNumbers(){
-   //      var filterNumbers = ["fred", false, 5, 3];
-   //      var splicedNumbers = filterNumbers.splice("fred", 2);
-   //      return filterNumbers.sort();
-   //  }
-   //  console.log(filterNumbers(["fred", false, 5, 3]));
+   function filterNumbers(){
+        var filterNumbers = ["fred", false, 5, 3];
+        var splicedNumbers = filterNumbers.splice("fred", 2);
+        return filterNumbers.sort();
+    }
+    console.log(filterNumbers(["fred", false, 5, 3]));
 
 
 
@@ -59,7 +59,7 @@ function filterNumbers(array) {
 
     return bucket
 }
-console.log(filterNumbers(["ted", true, 5, 3]));
+console.log(filterNumbers(["fred", true, 5, 3]));
 
 
 
