@@ -41,7 +41,7 @@
         var splicedNumbers = filterNumbers.splice("", 2);
         return filterNumbers.sort();
     }
-    console.log(filterNumbers(["ted", 10, true, 4, 1]));
+    console.log(filterNumbers(["ted", 10, true, 2, false, 1]));
 
 
 
@@ -76,41 +76,42 @@ function filterNumbers(array) {
 
     return bucket
 }
-console.log(filterNumbers(["fred", 10, true, 5, 3]));
+console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 
 
 
-
-   // ```js
+// ```js
     //     filterNumbers(["fred", false, 5, 3]) //[3, 5]
     // // ```
 
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
-//
-//     function getOlder(name, breed, age) {
-//         this.age++;
-//         var dogObjects = {
-//
-//             [
-//                 {
-//                     name: "Biscotti",
-//                     breed: "Lab",
-//                     age: 2
-//                 },
-//                 {
-//                     name: "Gnocchi",
-//                     breed: "Miniature Schnauzer",
-//                     age: 3
-//                 }
-//                 {
-//                     name: "Brewsy",
-//                     breed: "Mastif",
-//                     age: 10
-//
-//             ];
-//                 }
-//     }
-//     console.log(dogObjects.age);
+
+    function getOlder(array) {
+        var dogObjects = array;
+        for (var i = 0; i < dogObjects.length; i++)
+            console.log((dogObjects[i].age +1));
+    }getOlder([
+
+                {
+                    name: "Biscotti",
+                    breed: "Lab",
+                    age: 2
+                },
+                {
+                    name: "Gnocchi",
+                    breed: "Miniature Schnauzer",
+                    age: 3
+                },
+                {
+                    name: "Brewsy",
+                    breed: "Mastif",
+                    age: 10
+
+
+                }
+                ]);
+
+
 
    // js
    // //  //Example output
