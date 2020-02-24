@@ -36,12 +36,12 @@
 //     ## Practice Problems
 // 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.
 
-   function filterNumbers(){
-        var filterNumbers = ["fred", false, 5, 3];
-        var splicedNumbers = filterNumbers.splice("fred", 2);
+   function filterNumbers(array){
+        var bucket = [];
+        var splicedNumbers = filterNumbers.splice("", 2);
         return filterNumbers.sort();
     }
-    console.log(filterNumbers(["fred", false, 5, 3]));
+    console.log(filterNumbers(["ted", 10, true, 4, 1]));
 
 
 
@@ -59,7 +59,25 @@ function filterNumbers(array) {
 
     return bucket
 }
-console.log(filterNumbers(["fred", true, 5, 3]));
+console.log(filterNumbers(["fred", true, 10, 5, 3]));
+
+
+//////Method if 10 gets thrown in there//
+
+function filterNumbers(array) {
+    var bucket = [];
+    var arraySort = array.sort((a, b) => a - b);
+    arraySort.forEach(function (number)
+    {
+        if (!isNaN(parseFloat(number))) {
+            bucket.push(number)
+        }
+    });
+
+    return bucket
+}
+console.log(filterNumbers(["fred", 10, true, 5, 3]));
+
 
 
 
@@ -68,7 +86,7 @@ console.log(filterNumbers(["fred", true, 5, 3]));
     // // ```
 
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
-// //
+//
 //     function getOlder(name, breed, age) {
 //         this.age++;
 //         var dogObjects = {
