@@ -41,9 +41,11 @@
         var splicedNumbers = filterNumbers.splice("", 2);
         return filterNumbers.sort();
     }
-    console.log(filterNumbers(["ted", 10, true, 2, false, 1]));
+    console.log(filterNumbers(["ted", false, 10, true, 2, false, 1]));
 
 
+console.log(filterNumbers(["fred", true, 5, 3]));
+console.log(filterNumbers([100, 1000000, false, "red", true, 50, 500000, 3]));
 
    /////ANOTHER WAY///
 
@@ -56,8 +58,8 @@ function filterNumbers(array) {
             bucket.push(number)
         }
     });
+    return bucket.sort();
 
-    return bucket
 }
 console.log(filterNumbers(["fred", true, 10, 5, 3]));
 
@@ -86,11 +88,7 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 
 // 2. Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
 
-    function getOlder(array) {
-        var dogObjects = array;
-        for (var i = 0; i < dogObjects.length; i++)
-            console.log((dogObjects[i].age +1));
-    }getOlder([
+                var dogsList = [
 
                 {
                     name: "Biscotti",
@@ -109,7 +107,20 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 
 
                 }
-                ]);
+                ];
+
+                    function getOlder(dogArray) {
+                        var bucket = [];
+                        dogArray.forEach(function (dogs) {
+                           return (dogs.age += 1)
+
+
+                        });
+                        return dogsList;
+                    }
+                    console.log(getOlder(dogsList));
+
+
 
 
 
@@ -141,30 +152,44 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 //
 //     ```js
 //             // Example input
-//             [
-//                  {
-//                      make: 'Volvo',
-//                      color: 'red',
-//                      year: 1996,
-//                      isDirty: true
-//                  },
-//                  {
-//                      make: 'Toyota',
-//                      color: 'black',
-//                      year: 2004,
-//                      isDirty: false
-//                  },
-//                  {
-//                      make: 'Ford',
-//                      color: 'white',
-//                      year: 2007,
-//                      isDirty: true
-//                  }
-//             ]
-//       ```
-//
-//     ```js
-//             // Example output:
+
+
+
+            var carList =
+
+            [
+                 {
+                     make: 'Volvo',
+                     color: 'red',
+                     year: 1996,
+                     isDirty: true
+                 },
+                 {
+                     make: 'Toyota',
+                     color: 'black',
+                     year: 2004,
+                     isDirty: false
+                 },
+                 {
+                     make: 'Ford',
+                     color: 'white',
+                     year: 2007,
+                     isDirty: true
+                 }
+];
+
+                function washCars(cars){
+                cars.forEach(function(car) {
+                    return (car.isDirty = false)
+
+
+                });
+                return carList;
+                }
+            console.log(washCars(carList));
+
+
+                //        // Example output:
 //              [
 //                  {
 //                      make: 'Volvo',
@@ -190,20 +215,52 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 // 4. Write a function, `adminList()` that takes in an array of user objects and returns a count of all admins based on the isAdmin property. Refactor to return an array of admin-only user emails. Refactor again to return an array of user objects that are admins.
 //     ```js
 //          //Example Input:
-//           [
-//              {
-//                  isAdmin: true,
-//                  email: 'user1@email.com'
-//              },
-//              {
-//                  isAdmin: true,
-//                  email: 'user2@email.com'
-//              },
-//              {
-//                  isAdmin: false,
-//                  email: 'user3@email.com'
-//              }
-//          ];
+
+            var adminsList =
+
+          [
+             {
+                 isAdmin: true,
+                 email: 'user1@email.com'
+             },
+             {
+                 isAdmin: true,
+                 email: 'user2@email.com'
+             },
+             {
+                 isAdmin: false,
+                 email: 'user3@email.com'
+             }
+         ];
+
+
+                        function adminList(adminArray) {
+                            var adminCount = 0;
+
+                            adminArray.forEach(function (admin) {
+                                if(admin.isAdmin) {
+                                    adminCount += 1;
+                                }
+                            });
+                            return adminCount;
+                        }
+                        // console.log(adminList(adminsList));
+
+
+                function adminList(adminArray) {
+                    var bucket = [];
+
+                    adminArray.forEach(function (admin) {
+                        if (admin.isAdmin === true) {
+                            bucket.push(admin);
+                        }
+                    });
+                    return bucket;
+                }
+                console.log(adminList(adminsList));
+
+
+
 //     ```
 //
 //     ```js
@@ -232,6 +289,16 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 //     ```
 //
 // 5. Create a function, `makeSandwichObjects()` that takes in two array of strings, breads and fillings and returns an array of sandwichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
+
+///Using a For Loop will be simple for this one. Because you have to pull index 1, 2, etc. You need an iterator, a bracket 1, bracket 2, etc.//
+
+///A single way to approach a sandwich object:
+
+
+
+
+
+
 //
 //     ```js
 //         //     Example Input:
@@ -272,3 +339,28 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 //                  filling: "tuna"
 //              }
 // ]
+
+// TODO Write a function named keepYellow that accepts an array of strings and returns an array with all the strings that are equal to "yellow"
+
+
+
+
+///using a for Loop ^^^///
+
+function keepYellow(yellowArray){
+	var bucket = [];
+
+	for(var i = 0; i < yellowArray.length; i++){
+		if(yellowArray[i] === "yellow"){
+			bucket.push(yellowArray[i]);
+		}
+	}
+
+	return bucket;
+}
+console.log(keepYellow(["yellow", "red", "blue", "yellow", "black", "brown", "yellow"]));
+
+
+
+
+
