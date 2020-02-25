@@ -294,29 +294,37 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 
 ///A single way to approach a sandwich object:
 
+        //     Example Input:
+
+         var breadList  = [
+             "white",
+             "wheat",
+             "rhy",
+             "white"
+         ];
+
+         var fillingList = [
+             "pb&j",
+             "ham",
+             "cheese steak",
+             "tuna"
+         ];
+
+function makeSandwichObjects(breads, fillings) {
+    var bucket = [];
+
+    for (var i = 0; i < breads.length; i++) {
+        var sandwichObject = {
+            bread: breads[i],
+            filling: fillings[i]
+        };
+        bucket.push(sandwichObject);
+    }
+    return bucket;
+}
+    console.log(makeSandwichObjects(breadList, fillingList));
 
 
-
-
-
-//
-//     ```js
-//         //     Example Input:
-//
-//          var breads  = [
-//              "white",
-//              "wheat",
-//              "rhy",
-//              "white"
-//          ];
-//
-//          var fillings = [
-//              "pb&j",
-//              "ham",
-//              "cheese steak",
-//              "tuna"
-//          ];
-//
 //          makeSandwichObjects(breads, fillings) // example call to the function
 //     ```
 //     ```js
@@ -343,24 +351,20 @@ console.log(filterNumbers(["fred", 10, "happiness" , true, 5, 3]));
 // TODO Write a function named keepYellow that accepts an array of strings and returns an array with all the strings that are equal to "yellow"
 
 
-
-
 ///using a for Loop ^^^///
 
-function keepYellow(yellowArray){
-	var bucket = [];
+    function keepYellow(yellowArray) {
+        var bucket = [];
 
-	for(var i = 0; i < yellowArray.length; i++){
-		if(yellowArray[i] === "yellow"){
-			bucket.push(yellowArray[i]);
-		}
-	}
+        for (var i = 0; i < yellowArray.length; i++) {
+            if (yellowArray[i] === "yellow") {
+                bucket.push(yellowArray[i]);
+            }
+        }
 
-	return bucket;
-}
-console.log(keepYellow(["yellow", "red", "blue", "yellow", "black", "brown", "yellow"]));
+        return bucket;
+    }
 
-
-
+    console.log(keepYellow(["yellow", "red", "blue", "yellow", "black", "brown", "yellow"]));
 
 
