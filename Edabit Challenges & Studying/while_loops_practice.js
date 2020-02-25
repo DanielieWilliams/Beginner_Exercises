@@ -77,10 +77,12 @@ do {
 //     }
 //     }
 
+//write a function name bananaLength that returns the length of a string, if the input is not a string, return false
 
-
-
-
+function bananaLength(str){
+    return str.length;
+}
+console.log(bananaLength("strawberries"));
 
 
 
