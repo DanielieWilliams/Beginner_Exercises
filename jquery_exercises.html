@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--Including JQuery Locally-->
+    <script src="js/jquery-2.2.4.js"></script>
+
+    <!---Including Jquery via CDN-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+    <title>JQuery Exercises</title>
+</head>
+
+<body>
+<h1>JQuery Exercises</h1>
+<div class="list" id="codeup">
+    <ul>
+<li>Hi 1</li>
+<li>HI 2</li>
+<li>Hi 3</li>
+<li>Hi 4</li>
+    </ul>
+</div>
+
+    <div class="paragraph" id="writing">
+    <p>Hi ho hi ho off to work we go hi ho hi ho hi ho hi ho hi ho</p>
+</div>
+</div>
+
+
+
+<!DOM is loading JQuery-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        alert( 'The DOM has finished loading!' );
+        <!--DOM END-->
+
+///Multiple Selectors
+        $("selector1, selector2, selector3")
+
+        //Calling paragraph element by ID//
+        $('.list, p').css('background-color', '20px', '#FF0');
+
+        //Alerting contents of h1 element
+        var contents = $('.paragraph').html();
+        alert(contents);
+
+            //Alerting class code
+        var contents = $('#writing').html();
+        alert(contents);
+
+        //border around every element
+        $('*').css('border', '1px solid #FF0000');
+
+
+
+
+
+
+});
+
+
+</script>
+</body>
+</html>
